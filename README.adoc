@@ -13,7 +13,7 @@ Taken as a snapshot from the current development branch.
 For the guides, the freemarker templating has been completed.
 
 doc::
-Documentation re-organized documentation from above put into the Antora folder structure. The updat of internal references is complete for the new guides, and incomplete for the old admin guide.
+Documentation re-organized documentation from above put into the Antora folder structure. The update of internal references is complete for the new guides, and incomplete for the old admin guide.
 +
 To see what has changed, compare the files in the two folders.
 
@@ -47,3 +47,7 @@ Concept:
 Question:
 
 * Decide which includes should be converted to pages, and which should be moved to partials.
+
+== Todos for a real site
+
+* Consider Algolia for a hosted search service instead of client-side JavaScript search, as the index would overwise grow too big.

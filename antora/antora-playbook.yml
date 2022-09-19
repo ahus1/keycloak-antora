@@ -1,7 +1,7 @@
 site:
   title: Keycloak Docs
   # the 404, site-map, and canonical urls are only generated when an url is defined
-  url: https://ahus1.github.io/keycloak-docs
+  url: https://ahus1.github.io/keycloak-antora
   start_page: ROOT::index.adoc
 content:
   sources:
@@ -37,7 +37,7 @@ runtime:
 
 output:
   clean: true
-  dir: _site/keycloak-docs
+  dir: _site/keycloak-antora
 
 # Global asciidoc attributes here, used across all versions of documentation
 asciidoc:
