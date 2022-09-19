@@ -31,7 +31,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
-          path: antora/_site/keycloak-docs
+          path: antora/_site/keycloak-antora
 
   github-pages:
     environment:
