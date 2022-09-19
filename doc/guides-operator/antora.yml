@@ -1,0 +1,17 @@
+title: Guides Keycloak Operator
+name: guides-operator
+version: '20.0'
+nav:
+  - modules/ROOT/nav.adoc
+asciidoc:
+  attributes:
+    links_server_installation_name: Keycloak Operator Installation
+    links_server_installation_url: '#installation'
+    links_server_basic-deployment_name: Basic Keycloak Deployment
+    links_server_basic-deployment_url: '#basic-deployment'
+    links_server_realm-import_name: Keycloak Realm Import
+    links_server_realm-import_url: '#realm-import'
+    links_server_advanced-configuration_name: Advanced configuration
+    links_server_advanced-configuration_url: '#advanced-configuration'
+    links_server_customizing-keycloak_name: Using custom Keycloak images
+    links_server_customizing-keycloak_url: '#customizing-keycloak'

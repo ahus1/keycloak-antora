@@ -1,0 +1,20 @@
+
+== Configuring realms
+
+Once you have an administrative account for the Admin Console, you can configure realms. A realm is a space where you manage objects, including users, applications, roles, and groups.  A user belongs to and logs into a realm.   One {project_name} deployment can define, store, and manage as many realms as there is space for in the database.
+
+* xref:realms/proc-using-admin-console.adoc[leveloffset=1]
+* xref:realms/master.adoc[leveloffset=2]
+* xref:realms/proc-creating-a-realm.adoc[leveloffset=2]
+* xref:realms/ssl.adoc[leveloffset=2][]
+ifeval::[{project_product}==true]
+* xref:realms/cache.adoc[leveloffset=2][]
+endif::[]
+* xref:realms/email.adoc[leveloffset=2]
+* xref:realms/themes.adoc[leveloffset=2]
+* xref:login-settings.adoc[leveloffset=2]
+* xref:login-settings/forgot-password.adoc[leveloffset=2]
+* xref:login-settings/remember-me.adoc[leveloffset=2]
+* xref:login-settings/acr-to-loa-mapping.adoc[leveloffset=2]
+* xref:login-settings/update-email-workflow.adoc[leveloffset=2]
+* xref:realms/keys.adoc[]

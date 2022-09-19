@@ -1,0 +1,47 @@
+= Keycloak docs with Antora Proof-of-Concept
+
+== Content of the repository
+
+antora::
+Folder with templates for the site and Antora's configurations
+
+doc-original::
+The server-guide and operator-guide in the new format, and the admin-guide in the old format.
+Taken as a snapshot from the current development branch.
+For the guides, the freemarker templating has been completed.
+
+doc::
+Documentation re-organized documentation from above put into the Antora folder structure. The updat of internal references is complete for the new guides, and incomplete for the old admin guide.
++
+To see what has changed, compare the files in the two folders.
+
+== Concepts and Questions
+
+Concepts:
+
+* Antora components contain the version, and it can have multiple modules that share the same version.
+* A navigation is based on the component and spans multiple modules
+* A link from one component to another component that doesn't specify a component version will link to the latest release of that component.
++
+To link to the same version of a component, use for example `++xref:{page-version}@guides-server::importExport.adoc[]++`
+
+Questions:
+
+* Should all artifacts that share the same version number (Keycloak server and Keycloak operator) be in the same component?
+
+Concept:
+
+* When stripping the `.html` at the end of an URL, there can be either a page or a folder with that name.
+
+Question:
+
+* How show the parent page be named compared to the folder?
+As an itermediate solution, all parent pages received the `-all` suffix.
+
+Concept:
+
+* All files inside pages are rendered as HTML and should be references in nav.aodc
+
+Question:
+
+* Decide which includes should be converted to pages, and which should be moved to partials.

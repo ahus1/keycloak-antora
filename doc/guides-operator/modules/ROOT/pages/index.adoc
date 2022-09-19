@@ -1,0 +1,3 @@
+= Keycloak Operator guide
+
+Welcome to the Keycloak operator guide.

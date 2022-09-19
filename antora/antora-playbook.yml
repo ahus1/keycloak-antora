@@ -1,6 +1,6 @@
 site:
   title: Keycloak Benchmark
-  # the 404, site-map, and canonical urls are only generated when a url is defined
+  # the 404, site-map, and canonical urls are only generated when an url is defined
   url: https://www.keycloak.org/keycloak-benchmark
   start_page: ROOT::index.adoc
 content:

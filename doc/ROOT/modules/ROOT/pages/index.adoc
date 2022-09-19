@@ -1,0 +1,8 @@
+= Keycloak Documentation
+:navtitle: Welcome
+
+This is the documentation site for Keycloak.
+
+* xref:20.0@guides-server::index.adoc[]
+* xref:20.0@guides-operator::index.adoc[]
+* xref:20.0@server-admin::index.adoc[]

@@ -1,0 +1,5 @@
+title: Keycloak Server Administration
+name: server-admin
+version: '20.0'
+nav:
+  - modules/ROOT/nav.adoc

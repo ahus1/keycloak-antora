@@ -1,0 +1,1451 @@
+
+:guide-id: all-config
+:guide-title: All configuration
+:guide-summary: Complete list of all build options and configuration for Keycloak
+:guide-priority: 999
+
+[[all-config]]
+= All configuration
+
+
+== Cache
+
+[cols="12a,4,4,1",role="options"]
+|===
+| |Type|Default|
+
+|
+[.options-key]#cache#
+
+[.options-description]#Defines the cache mechanism for high-availability.#
+
+[#option-extended-cache,role="options-extended"]
+!===
+![.options-description-extended]#By default, a 'ispn' cache is used to create a cluster between multiple server nodes. A 'local' cache disables clustering and is intended for development and testing purposes.#
+![.options-description-example]#*CLI:* `--cache`#
+![.options-description-example]#*Env:* `KC_CACHE`#
+!===
+|[.options-type]#ispn, local#
+
+|[.options-default]#ispn#
+
+|icon:tools[role=options-build]
+|
+[.options-key]#cache-config-file#
+
+[.options-description]#Defines the file from which cache configuration should be loaded from.#
+
+[#option-extended-cache-config-file,role="options-extended"]
+!===
+![.options-description-extended]#The configuration file is relative to the 'conf/' directory.#
+![.options-description-example]#*CLI:* `--cache-config-file`#
+![.options-description-example]#*Env:* `KC_CACHE_CONFIG_FILE`#
+!===
+|
+
+|
+
+|icon:tools[role=options-build]
+|
+[.options-key]#cache-stack#
+
+[.options-description]#Define the default stack to use for cluster communication and node discovery.#
+
+[#option-extended-cache-stack,role="options-extended"]
+!===
+![.options-description-extended]#This option only takes effect if 'cache' is set to 'ispn'. Default: udp.#
+![.options-description-example]#*CLI:* `--cache-stack`#
+![.options-description-example]#*Env:* `KC_CACHE_STACK`#
+!===
+|[.options-type]#tcp, udp, kubernetes, ec2, azure, google#
+
+|
+
+|icon:tools[role=options-build]
+
+|===
+== Storage (Experimental)
+
+[cols="12a,4,4,1",role="options"]
+|===
+| |Type|Default|
+
+|
+[.options-key]#storage#
+
+[.options-description]#Experimental: Sets the default storage mechanism for all areas.#
+
+[#option-extended-storage,role="options-extended"]
+!===
+!
+![.options-description-example]#*CLI:* `--storage`#
+![.options-description-example]#*Env:* `KC_STORAGE`#
+!===
+|[.options-type]#jpa, chm, hotrod#
+
+|
+
+|icon:tools[role=options-build]
+|
+[.options-key]#storage-area-action-token#
+
+[.options-description]#Experimental: Sets a storage mechanism for action tokens.#
+
+[#option-extended-storage-area-action-token,role="options-extended"]
+!===
+!
+![.options-description-example]#*CLI:* `--storage-area-action-token`#
+![.options-description-example]#*Env:* `KC_STORAGE_AREA_ACTION_TOKEN`#
+!===
+|[.options-type]#jpa, chm, hotrod#
+
+|
+
+|icon:tools[role=options-build]
+|
+[.options-key]#storage-area-auth-session#
+
+[.options-description]#Experimental: Sets a storage mechanism for authentication sessions.#
+
+[#option-extended-storage-area-auth-session,role="options-extended"]
+!===
+!
+![.options-description-example]#*CLI:* `--storage-area-auth-session`#
+![.options-description-example]#*Env:* `KC_STORAGE_AREA_AUTH_SESSION`#
+!===
+|[.options-type]#jpa, chm, hotrod#
+
+|
+
+|icon:tools[role=options-build]
+|
+[.options-key]#storage-area-authorization#
+
+[.options-description]#Experimental: Sets a storage mechanism for authorizations.#
+
+[#option-extended-storage-area-authorization,role="options-extended"]
+!===
+!
+![.options-description-example]#*CLI:* `--storage-area-authorization`#
+![.options-description-example]#*Env:* `KC_STORAGE_AREA_AUTHORIZATION`#
+!===
+|[.options-type]#jpa, chm, hotrod#
+
+|
+
+|icon:tools[role=options-build]
+|
+[.options-key]#storage-area-client#
+
+[.options-description]#Experimental: Sets a storage mechanism for clients.#
+
+[#option-extended-storage-area-client,role="options-extended"]
+!===
+!
+![.options-description-example]#*CLI:* `--storage-area-client`#
+![.options-description-example]#*Env:* `KC_STORAGE_AREA_CLIENT`#
+!===
+|[.options-type]#jpa, chm, hotrod#
+
+|
+
+|icon:tools[role=options-build]
+|
+[.options-key]#storage-area-client-scope#
+
+[.options-description]#Experimental: Sets a storage mechanism for client scopes.#
+
+[#option-extended-storage-area-client-scope,role="options-extended"]
+!===
+!
+![.options-description-example]#*CLI:* `--storage-area-client-scope`#
+![.options-description-example]#*Env:* `KC_STORAGE_AREA_CLIENT_SCOPE`#
+!===
+|[.options-type]#jpa, chm, hotrod#
+
+|
+
+|icon:tools[role=options-build]
+|
+[.options-key]#storage-area-event-admin#
+
+[.options-description]#Experimental: Sets a storage mechanism for admin events.#
+
+[#option-extended-storage-area-event-admin,role="options-extended"]
+!===
+!
+![.options-description-example]#*CLI:* `--storage-area-event-admin`#
+![.options-description-example]#*Env:* `KC_STORAGE_AREA_EVENT_ADMIN`#
+!===
+|[.options-type]#jpa, chm, hotrod#
+
+|
+
+|icon:tools[role=options-build]
+|
+[.options-key]#storage-area-event-auth#
+
+[.options-description]#Experimental: Sets a storage mechanism for authentication and authorization events.#
+
+[#option-extended-storage-area-event-auth,role="options-extended"]
+!===
+!
+![.options-description-example]#*CLI:* `--storage-area-event-auth`#
+![.options-description-example]#*Env:* `KC_STORAGE_AREA_EVENT_AUTH`#
+!===
+|[.options-type]#jpa, chm, hotrod#
+
+|
+
+|icon:tools[role=options-build]
+|
+[.options-key]#storage-area-group#
+
+[.options-description]#Experimental: Sets a storage mechanism for groups.#
+
+[#option-extended-storage-area-group,role="options-extended"]
+!===
+!
+![.options-description-example]#*CLI:* `--storage-area-group`#
+![.options-description-example]#*Env:* `KC_STORAGE_AREA_GROUP`#
+!===
+|[.options-type]#jpa, chm, hotrod#
+
+|
+
+|icon:tools[role=options-build]
+|
+[.options-key]#storage-area-login-failure#
+
+[.options-description]#Experimental: Sets a storage mechanism for login failures.#
+
+[#option-extended-storage-area-login-failure,role="options-extended"]
+!===
+!
+![.options-description-example]#*CLI:* `--storage-area-login-failure`#
+![.options-description-example]#*Env:* `KC_STORAGE_AREA_LOGIN_FAILURE`#
+!===
+|[.options-type]#jpa, chm, hotrod#
+
+|
+
+|icon:tools[role=options-build]
+|
+[.options-key]#storage-area-realm#
+
+[.options-description]#Experimental: Sets a storage mechanism for realms.#
+
+[#option-extended-storage-area-realm,role="options-extended"]
+!===
+!
+![.options-description-example]#*CLI:* `--storage-area-realm`#
+![.options-description-example]#*Env:* `KC_STORAGE_AREA_REALM`#
+!===
+|[.options-type]#jpa, chm, hotrod#
+
+|
+
+|icon:tools[role=options-build]
+|
+[.options-key]#storage-area-role#
+
+[.options-description]#Experimental: Sets a storage mechanism for roles.#
+
+[#option-extended-storage-area-role,role="options-extended"]
+!===
+!
+![.options-description-example]#*CLI:* `--storage-area-role`#
+![.options-description-example]#*Env:* `KC_STORAGE_AREA_ROLE`#
+!===
+|[.options-type]#jpa, chm, hotrod#
+
+|
+
+|icon:tools[role=options-build]
+|
+[.options-key]#storage-area-single-use-object#
+
+[.options-description]#Experimental: Sets a storage mechanism for single use objects.#
+
+[#option-extended-storage-area-single-use-object,role="options-extended"]
+!===
+!
+![.options-description-example]#*CLI:* `--storage-area-single-use-object`#
+![.options-description-example]#*Env:* `KC_STORAGE_AREA_SINGLE_USE_OBJECT`#
+!===
+|[.options-type]#jpa, chm, hotrod#
+
+|
+
+|icon:tools[role=options-build]
+|
+[.options-key]#storage-area-user#
+
+[.options-description]#Experimental: Sets a storage mechanism for users.#
+
+[#option-extended-storage-area-user,role="options-extended"]
+!===
+!
+![.options-description-example]#*CLI:* `--storage-area-user`#
+![.options-description-example]#*Env:* `KC_STORAGE_AREA_USER`#
+!===
+|[.options-type]#jpa, chm, hotrod#
+
+|
+
+|icon:tools[role=options-build]
+|
+[.options-key]#storage-area-user-session#
+
+[.options-description]#Experimental: Sets a storage mechanism for user and client sessions.#
+
+[#option-extended-storage-area-user-session,role="options-extended"]
+!===
+!
+![.options-description-example]#*CLI:* `--storage-area-user-session`#
+![.options-description-example]#*Env:* `KC_STORAGE_AREA_USER_SESSION`#
+!===
+|[.options-type]#jpa, chm, hotrod#
+
+|
+
+|icon:tools[role=options-build]
+|
+[.options-key]#storage-deployment-state-version-seed#
+
+[.options-description]#Experimental: Secret that serves as a seed to mask the version number of Keycloak in URLs.#
+
+[#option-extended-storage-deployment-state-version-seed,role="options-extended"]
+!===
+![.options-description-extended]#Need to be identical across all servers in the cluster. Will default to a random number generated when starting the server which is secure but will lead to problems when a loadbalancer without sticky sessions is used or nodes are restarted.#
+![.options-description-example]#*CLI:* `--storage-deployment-state-version-seed`#
+![.options-description-example]#*Env:* `KC_STORAGE_DEPLOYMENT_STATE_VERSION_SEED`#
+!===
+|
+
+|
+
+|
+|
+[.options-key]#storage-hotrod-host#
+
+[.options-description]#Experimental: Sets the host of the Infinispan server.#
+
+[#option-extended-storage-hotrod-host,role="options-extended"]
+!===
+!
+![.options-description-example]#*CLI:* `--storage-hotrod-host`#
+![.options-description-example]#*Env:* `KC_STORAGE_HOTROD_HOST`#
+!===
+|
+
+|
+
+|
+|
+[.options-key]#storage-hotrod-password#
+
+[.options-description]#Experimental: Sets the password of the Infinispan user.#
+
+[#option-extended-storage-hotrod-password,role="options-extended"]
+!===
+!
+![.options-description-example]#*CLI:* `--storage-hotrod-password`#
+![.options-description-example]#*Env:* `KC_STORAGE_HOTROD_PASSWORD`#
+!===
+|
+
+|
+
+|
+|
+[.options-key]#storage-hotrod-port#
+
+[.options-description]#Experimental: Sets the port of the Infinispan server.#
+
+[#option-extended-storage-hotrod-port,role="options-extended"]
+!===
+!
+![.options-description-example]#*CLI:* `--storage-hotrod-port`#
+![.options-description-example]#*Env:* `KC_STORAGE_HOTROD_PORT`#
+!===
+|
+
+|
+
+|
+|
+[.options-key]#storage-hotrod-username#
+
+[.options-description]#Experimental: Sets the username of the Infinispan user.#
+
+[#option-extended-storage-hotrod-username,role="options-extended"]
+!===
+!
+![.options-description-example]#*CLI:* `--storage-hotrod-username`#
+![.options-description-example]#*Env:* `KC_STORAGE_HOTROD_USERNAME`#
+!===
+|
+
+|
+
+|
+
+|===
+== Database
+
+[cols="12a,4,4,1",role="options"]
+|===
+| |Type|Default|
+
+|
+[.options-key]#db#
+
+[.options-description]#The database vendor.#
+
+[#option-extended-db,role="options-extended"]
+!===
+!
+![.options-description-example]#*CLI:* `--db`#
+![.options-description-example]#*Env:* `KC_DB`#
+!===
+|[.options-type]#dev-file, dev-mem, mariadb, mssql, mysql, oracle, postgres#
+
+|[.options-default]#dev-file#
+
+|icon:tools[role=options-build]
+|
+[.options-key]#db-password#
+
+[.options-description]#The password of the database user.#
+
+[#option-extended-db-password,role="options-extended"]
+!===
+!
+![.options-description-example]#*CLI:* `--db-password`#
+![.options-description-example]#*Env:* `KC_DB_PASSWORD`#
+!===
+|
+
+|
+
+|
+|
+[.options-key]#db-pool-initial-size#
+
+[.options-description]#The initial size of the connection pool.#
+
+[#option-extended-db-pool-initial-size,role="options-extended"]
+!===
+!
+![.options-description-example]#*CLI:* `--db-pool-initial-size`#
+![.options-description-example]#*Env:* `KC_DB_POOL_INITIAL_SIZE`#
+!===
+|
+
+|
+
+|
+|
+[.options-key]#db-pool-max-size#
+
+[.options-description]#The maximum size of the connection pool.#
+
+[#option-extended-db-pool-max-size,role="options-extended"]
+!===
+!
+![.options-description-example]#*CLI:* `--db-pool-max-size`#
+![.options-description-example]#*Env:* `KC_DB_POOL_MAX_SIZE`#
+!===
+|
+
+|[.options-default]#100#
+
+|
+|
+[.options-key]#db-pool-min-size#
+
+[.options-description]#The minimal size of the connection pool.#
+
+[#option-extended-db-pool-min-size,role="options-extended"]
+!===
+!
+![.options-description-example]#*CLI:* `--db-pool-min-size`#
+![.options-description-example]#*Env:* `KC_DB_POOL_MIN_SIZE`#
+!===
+|
+
+|
+
+|
+|
+[.options-key]#db-schema#
+
+[.options-description]#The database schema to be used.#
+
+[#option-extended-db-schema,role="options-extended"]
+!===
+!
+![.options-description-example]#*CLI:* `--db-schema`#
+![.options-description-example]#*Env:* `KC_DB_SCHEMA`#
+!===
+|
+
+|
+
+|
+|
+[.options-key]#db-url#
+
+[.options-description]#The full database JDBC URL.#
+
+[#option-extended-db-url,role="options-extended"]
+!===
+![.options-description-extended]#If not provided, a default URL is set based on the selected database vendor. For instance, if using 'postgres', the default JDBC URL would be 'jdbc:postgresql://localhost/keycloak'.#
+![.options-description-example]#*CLI:* `--db-url`#
+![.options-description-example]#*Env:* `KC_DB_URL`#
+!===
+|
+
+|
+
+|
+|
+[.options-key]#db-url-database#
+
+[.options-description]#Sets the database name of the default JDBC URL of the chosen vendor.#
+
+[#option-extended-db-url-database,role="options-extended"]
+!===
+![.options-description-extended]#If the `db-url` option is set, this option is ignored.#
+![.options-description-example]#*CLI:* `--db-url-database`#
+![.options-description-example]#*Env:* `KC_DB_URL_DATABASE`#
+!===
+|
+
+|
+
+|
+|
+[.options-key]#db-url-host#
+
+[.options-description]#Sets the hostname of the default JDBC URL of the chosen vendor.#
+
+[#option-extended-db-url-host,role="options-extended"]
+!===
+![.options-description-extended]#If the `db-url` option is set, this option is ignored.#
+![.options-description-example]#*CLI:* `--db-url-host`#
+![.options-description-example]#*Env:* `KC_DB_URL_HOST`#
+!===
+|
+
+|
+
+|
+|
+[.options-key]#db-url-port#
+
+[.options-description]#Sets the port of the default JDBC URL of the chosen vendor.#
+
+[#option-extended-db-url-port,role="options-extended"]
+!===
+![.options-description-extended]#If the `db-url` option is set, this option is ignored.#
+![.options-description-example]#*CLI:* `--db-url-port`#
+![.options-description-example]#*Env:* `KC_DB_URL_PORT`#
+!===
+|
+
+|
+
+|
+|
+[.options-key]#db-url-properties#
+
+[.options-description]#Sets the properties of the default JDBC URL of the chosen vendor.#
+
+[#option-extended-db-url-properties,role="options-extended"]
+!===
+![.options-description-extended]#If the `db-url` option is set, this option is ignored.#
+![.options-description-example]#*CLI:* `--db-url-properties`#
+![.options-description-example]#*Env:* `KC_DB_URL_PROPERTIES`#
+!===
+|
+
+|
+
+|
+|
+[.options-key]#db-username#
+
+[.options-description]#The username of the database user.#
+
+[#option-extended-db-username,role="options-extended"]
+!===
+!
+![.options-description-example]#*CLI:* `--db-username`#
+![.options-description-example]#*Env:* `KC_DB_USERNAME`#
+!===
+|
+
+|
+
+|
+
+|===
+== Transaction
+
+[cols="12a,4,4,1",role="options"]
+|===
+| |Type|Default|
+
+|
+[.options-key]#transaction-xa-enabled#
+
+[.options-description]#If set to false, Keycloak uses a non-XA datasource in case the database does not support XA transactions.#
+
+[#option-extended-transaction-xa-enabled,role="options-extended"]
+!===
+!
+![.options-description-example]#*CLI:* `--transaction-xa-enabled`#
+![.options-description-example]#*Env:* `KC_TRANSACTION_XA_ENABLED`#
+!===
+|[.options-type]#true, false#
+
+|[.options-default]#true#
+
+|icon:tools[role=options-build]
+
+|===
+== Feature
+
+[cols="12a,4,4,1",role="options"]
+|===
+| |Type|Default|
+
+|
+[.options-key]#features#
+
+[.options-description]#Enables a set of one or more features.#
+
+[#option-extended-features,role="options-extended"]
+!===
+!
+![.options-description-example]#*CLI:* `--features`#
+![.options-description-example]#*Env:* `KC_FEATURES`#
+!===
+|[.options-type]#authorization, account2, account-api, admin-fine-grained-authz, admin-api, admin, admin2, docker, impersonation, openshift-integration, scripts, token-exchange, web-authn, client-policies, ciba, map-storage, par, declarative-user-profile, dynamic-scopes, client-secret-rotation, step-up-authentication, recovery-codes, update-email, preview#
+
+|
+
+|icon:tools[role=options-build]
+|
+[.options-key]#features-disabled#
+
+[.options-description]#Disables a set of one or more features.#
+
+[#option-extended-features-disabled,role="options-extended"]
+!===
+!
+![.options-description-example]#*CLI:* `--features-disabled`#
+![.options-description-example]#*Env:* `KC_FEATURES_DISABLED`#
+!===
+|[.options-type]#authorization, account2, account-api, admin-fine-grained-authz, admin-api, admin, admin2, docker, impersonation, openshift-integration, scripts, token-exchange, web-authn, client-policies, ciba, map-storage, par, declarative-user-profile, dynamic-scopes, client-secret-rotation, step-up-authentication, recovery-codes, update-email, preview#
+
+|
+
+|icon:tools[role=options-build]
+
+|===
+== Hostname
+
+[cols="12a,4,4,1",role="options"]
+|===
+| |Type|Default|
+
+|
+[.options-key]#hostname#
+
+[.options-description]#Hostname for the Keycloak server.#
+
+[#option-extended-hostname,role="options-extended"]
+!===
+!
+![.options-description-example]#*CLI:* `--hostname`#
+![.options-description-example]#*Env:* `KC_HOSTNAME`#
+!===
+|
+
+|
+
+|
+|
+[.options-key]#hostname-admin#
+
+[.options-description]#The hostname for accessing the administration console.#
+
+[#option-extended-hostname-admin,role="options-extended"]
+!===
+![.options-description-extended]#Use this option if you are exposing the administration console using a hostname other than the value set to the 'hostname' option.#
+![.options-description-example]#*CLI:* `--hostname-admin`#
+![.options-description-example]#*Env:* `KC_HOSTNAME_ADMIN`#
+!===
+|
+
+|
+
+|
+|
+[.options-key]#hostname-admin-url#
+
+[.options-description]#Set the base URL for accessing the administration console, including scheme, host, port and path#
+
+[#option-extended-hostname-admin-url,role="options-extended"]
+!===
+!
+![.options-description-example]#*CLI:* `--hostname-admin-url`#
+![.options-description-example]#*Env:* `KC_HOSTNAME_ADMIN_URL`#
+!===
+|
+
+|
+
+|
+|
+[.options-key]#hostname-path#
+
+[.options-description]#This should be set if proxy uses a different context-path for Keycloak.#
+
+[#option-extended-hostname-path,role="options-extended"]
+!===
+!
+![.options-description-example]#*CLI:* `--hostname-path`#
+![.options-description-example]#*Env:* `KC_HOSTNAME_PATH`#
+!===
+|
+
+|
+
+|
+|
+[.options-key]#hostname-port#
+
+[.options-description]#The port used by the proxy when exposing the hostname.#
+
+[#option-extended-hostname-port,role="options-extended"]
+!===
+![.options-description-extended]#Set this option if the proxy uses a port other than the default HTTP and HTTPS ports.#
+![.options-description-example]#*CLI:* `--hostname-port`#
+![.options-description-example]#*Env:* `KC_HOSTNAME_PORT`#
+!===
+|
+
+|[.options-default]#-1#
+
+|
+|
+[.options-key]#hostname-strict#
+
+[.options-description]#Disables dynamically resolving the hostname from request headers.#
+
+[#option-extended-hostname-strict,role="options-extended"]
+!===
+![.options-description-extended]#Should always be set to true in production, unless proxy verifies the Host header.#
+![.options-description-example]#*CLI:* `--hostname-strict`#
+![.options-description-example]#*Env:* `KC_HOSTNAME_STRICT`#
+!===
+|[.options-type]#true, false#
+
+|[.options-default]#true#
+
+|
+|
+[.options-key]#hostname-strict-backchannel#
+
+[.options-description]#By default backchannel URLs are dynamically resolved from request headers to allow internal and external applications.#
+
+[#option-extended-hostname-strict-backchannel,role="options-extended"]
+!===
+![.options-description-extended]#If all applications use the public URL this option should be enabled.#
+![.options-description-example]#*CLI:* `--hostname-strict-backchannel`#
+![.options-description-example]#*Env:* `KC_HOSTNAME_STRICT_BACKCHANNEL`#
+!===
+|[.options-type]#true, false#
+
+|[.options-default]#false#
+
+|
+|
+[.options-key]#hostname-url#
+
+[.options-description]#Set the base URL for frontend URLs, including scheme, host, port and path.#
+
+[#option-extended-hostname-url,role="options-extended"]
+!===
+!
+![.options-description-example]#*CLI:* `--hostname-url`#
+![.options-description-example]#*Env:* `KC_HOSTNAME_URL`#
+!===
+|
+
+|
+
+|
+
+|===
+== HTTP/TLS
+
+[cols="12a,4,4,1",role="options"]
+|===
+| |Type|Default|
+
+|
+[.options-key]#http-enabled#
+
+[.options-description]#Enables the HTTP listener.#
+
+[#option-extended-http-enabled,role="options-extended"]
+!===
+!
+![.options-description-example]#*CLI:* `--http-enabled`#
+![.options-description-example]#*Env:* `KC_HTTP_ENABLED`#
+!===
+|[.options-type]#true, false#
+
+|[.options-default]#false#
+
+|
+|
+[.options-key]#http-host#
+
+[.options-description]#The used HTTP Host.#
+
+[#option-extended-http-host,role="options-extended"]
+!===
+!
+![.options-description-example]#*CLI:* `--http-host`#
+![.options-description-example]#*Env:* `KC_HTTP_HOST`#
+!===
+|
+
+|[.options-default]#0.0.0.0#
+
+|
+|
+[.options-key]#http-port#
+
+[.options-description]#The used HTTP port.#
+
+[#option-extended-http-port,role="options-extended"]
+!===
+!
+![.options-description-example]#*CLI:* `--http-port`#
+![.options-description-example]#*Env:* `KC_HTTP_PORT`#
+!===
+|
+
+|[.options-default]#8080#
+
+|
+|
+[.options-key]#http-relative-path#
+
+[.options-description]#Set the path relative to '/' for serving resources.#
+
+[#option-extended-http-relative-path,role="options-extended"]
+!===
+![.options-description-extended]#The path must start with a '/'.#
+![.options-description-example]#*CLI:* `--http-relative-path`#
+![.options-description-example]#*Env:* `KC_HTTP_RELATIVE_PATH`#
+!===
+|
+
+|[.options-default]#/#
+
+|icon:tools[role=options-build]
+|
+[.options-key]#https-certificate-file#
+
+[.options-description]#The file path to a server certificate or certificate chain in PEM format.#
+
+[#option-extended-https-certificate-file,role="options-extended"]
+!===
+!
+![.options-description-example]#*CLI:* `--https-certificate-file`#
+![.options-description-example]#*Env:* `KC_HTTPS_CERTIFICATE_FILE`#
+!===
+|
+
+|
+
+|
+|
+[.options-key]#https-certificate-key-file#
+
+[.options-description]#The file path to a private key in PEM format.#
+
+[#option-extended-https-certificate-key-file,role="options-extended"]
+!===
+!
+![.options-description-example]#*CLI:* `--https-certificate-key-file`#
+![.options-description-example]#*Env:* `KC_HTTPS_CERTIFICATE_KEY_FILE`#
+!===
+|
+
+|
+
+|
+|
+[.options-key]#https-cipher-suites#
+
+[.options-description]#The cipher suites to use.#
+
+[#option-extended-https-cipher-suites,role="options-extended"]
+!===
+![.options-description-extended]#If none is given, a reasonable default is selected.#
+![.options-description-example]#*CLI:* `--https-cipher-suites`#
+![.options-description-example]#*Env:* `KC_HTTPS_CIPHER_SUITES`#
+!===
+|
+
+|
+
+|
+|
+[.options-key]#https-client-auth#
+
+[.options-description]#Configures the server to require/request client authentication.#
+
+[#option-extended-https-client-auth,role="options-extended"]
+!===
+!
+![.options-description-example]#*CLI:* `--https-client-auth`#
+![.options-description-example]#*Env:* `KC_HTTPS_CLIENT_AUTH`#
+!===
+|[.options-type]#none, request, required#
+
+|[.options-default]#none#
+
+|
+|
+[.options-key]#https-key-store-file#
+
+[.options-description]#The key store which holds the certificate information instead of specifying separate files.#
+
+[#option-extended-https-key-store-file,role="options-extended"]
+!===
+!
+![.options-description-example]#*CLI:* `--https-key-store-file`#
+![.options-description-example]#*Env:* `KC_HTTPS_KEY_STORE_FILE`#
+!===
+|
+
+|
+
+|
+|
+[.options-key]#https-key-store-password#
+
+[.options-description]#The password of the key store file.#
+
+[#option-extended-https-key-store-password,role="options-extended"]
+!===
+!
+![.options-description-example]#*CLI:* `--https-key-store-password`#
+![.options-description-example]#*Env:* `KC_HTTPS_KEY_STORE_PASSWORD`#
+!===
+|
+
+|[.options-default]#password#
+
+|
+|
+[.options-key]#https-key-store-type#
+
+[.options-description]#The type of the key store file.#
+
+[#option-extended-https-key-store-type,role="options-extended"]
+!===
+![.options-description-extended]#If not given, the type is automatically detected based on the file name.#
+![.options-description-example]#*CLI:* `--https-key-store-type`#
+![.options-description-example]#*Env:* `KC_HTTPS_KEY_STORE_TYPE`#
+!===
+|
+
+|
+
+|
+|
+[.options-key]#https-port#
+
+[.options-description]#The used HTTPS port.#
+
+[#option-extended-https-port,role="options-extended"]
+!===
+!
+![.options-description-example]#*CLI:* `--https-port`#
+![.options-description-example]#*Env:* `KC_HTTPS_PORT`#
+!===
+|
+
+|[.options-default]#8443#
+
+|
+|
+[.options-key]#https-protocols#
+
+[.options-description]#The list of protocols to explicitly enable.#
+
+[#option-extended-https-protocols,role="options-extended"]
+!===
+!
+![.options-description-example]#*CLI:* `--https-protocols`#
+![.options-description-example]#*Env:* `KC_HTTPS_PROTOCOLS`#
+!===
+|
+
+|[.options-default]#TLSv1.3#
+
+|
+|
+[.options-key]#https-trust-store-file#
+
+[.options-description]#The trust store which holds the certificate information of the certificates to trust.#
+
+[#option-extended-https-trust-store-file,role="options-extended"]
+!===
+!
+![.options-description-example]#*CLI:* `--https-trust-store-file`#
+![.options-description-example]#*Env:* `KC_HTTPS_TRUST_STORE_FILE`#
+!===
+|
+
+|
+
+|
+|
+[.options-key]#https-trust-store-password#
+
+[.options-description]#The password of the trust store file.#
+
+[#option-extended-https-trust-store-password,role="options-extended"]
+!===
+!
+![.options-description-example]#*CLI:* `--https-trust-store-password`#
+![.options-description-example]#*Env:* `KC_HTTPS_TRUST_STORE_PASSWORD`#
+!===
+|
+
+|
+
+|
+|
+[.options-key]#https-trust-store-type#
+
+[.options-description]#The type of the trust store file.#
+
+[#option-extended-https-trust-store-type,role="options-extended"]
+!===
+![.options-description-extended]#If not given, the type is automatically detected based on the file name.#
+![.options-description-example]#*CLI:* `--https-trust-store-type`#
+![.options-description-example]#*Env:* `KC_HTTPS_TRUST_STORE_TYPE`#
+!===
+|
+
+|
+
+|
+
+|===
+== Health
+
+[cols="12a,4,4,1",role="options"]
+|===
+| |Type|Default|
+
+|
+[.options-key]#health-enabled#
+
+[.options-description]#If the server should expose health check endpoints.#
+
+[#option-extended-health-enabled,role="options-extended"]
+!===
+![.options-description-extended]#If enabled, health checks are available at the '/health', '/health/ready' and '/health/live' endpoints.#
+![.options-description-example]#*CLI:* `--health-enabled`#
+![.options-description-example]#*Env:* `KC_HEALTH_ENABLED`#
+!===
+|[.options-type]#true, false#
+
+|[.options-default]#false#
+
+|icon:tools[role=options-build]
+
+|===
+== Metrics
+
+[cols="12a,4,4,1",role="options"]
+|===
+| |Type|Default|
+
+|
+[.options-key]#metrics-enabled#
+
+[.options-description]#If the server should expose metrics.#
+
+[#option-extended-metrics-enabled,role="options-extended"]
+!===
+![.options-description-extended]#If enabled, metrics are available at the '/metrics' endpoint.#
+![.options-description-example]#*CLI:* `--metrics-enabled`#
+![.options-description-example]#*Env:* `KC_METRICS_ENABLED`#
+!===
+|[.options-type]#true, false#
+
+|[.options-default]#false#
+
+|icon:tools[role=options-build]
+
+|===
+== Proxy
+
+[cols="12a,4,4,1",role="options"]
+|===
+| |Type|Default|
+
+|
+[.options-key]#proxy#
+
+[.options-description]#The proxy address forwarding mode if the server is behind a reverse proxy.#
+
+[#option-extended-proxy,role="options-extended"]
+!===
+!
+![.options-description-example]#*CLI:* `--proxy`#
+![.options-description-example]#*Env:* `KC_PROXY`#
+!===
+|[.options-type]#none, edge, reencrypt, passthrough#
+
+|[.options-default]#none#
+
+|
+
+|===
+== Vault
+
+[cols="12a,4,4,1",role="options"]
+|===
+| |Type|Default|
+
+|
+[.options-key]#vault#
+
+[.options-description]#Enables a vault provider.#
+
+[#option-extended-vault,role="options-extended"]
+!===
+!
+![.options-description-example]#*CLI:* `--vault`#
+![.options-description-example]#*Env:* `KC_VAULT`#
+!===
+|[.options-type]#file, hashicorp#
+
+|
+
+|icon:tools[role=options-build]
+|
+[.options-key]#vault-dir#
+
+[.options-description]#If set, secrets can be obtained by reading the content of files within the given directory.#
+
+[#option-extended-vault-dir,role="options-extended"]
+!===
+!
+![.options-description-example]#*CLI:* `--vault-dir`#
+![.options-description-example]#*Env:* `KC_VAULT_DIR`#
+!===
+|
+
+|
+
+|
+
+|===
+== Logging
+
+[cols="12a,4,4,1",role="options"]
+|===
+| |Type|Default|
+
+|
+[.options-key]#log#
+
+[.options-description]#Enable one or more log handlers in a comma-separated list.#
+
+[#option-extended-log,role="options-extended"]
+!===
+!
+![.options-description-example]#*CLI:* `--log`#
+![.options-description-example]#*Env:* `KC_LOG`#
+!===
+|[.options-type]#console, file, gelf#
+
+|[.options-default]#console#
+
+|
+|
+[.options-key]#log-console-color#
+
+[.options-description]#Enable or disable colors when logging to console.#
+
+[#option-extended-log-console-color,role="options-extended"]
+!===
+!
+![.options-description-example]#*CLI:* `--log-console-color`#
+![.options-description-example]#*Env:* `KC_LOG_CONSOLE_COLOR`#
+!===
+|[.options-type]#true, false#
+
+|[.options-default]#false#
+
+|
+|
+[.options-key]#log-console-format#
+
+[.options-description]#The format of unstructured console log entries.#
+
+[#option-extended-log-console-format,role="options-extended"]
+!===
+![.options-description-extended]#If the format has spaces in it, escape the value using "<format>".#
+![.options-description-example]#*CLI:* `--log-console-format`#
+![.options-description-example]#*Env:* `KC_LOG_CONSOLE_FORMAT`#
+!===
+|
+
+|[.options-default]#%d{yyyy-MM-dd HH:mm:ss,SSS} %-5p [%c] (%t) %s%e%n#
+
+|
+|
+[.options-key]#log-console-output#
+
+[.options-description]#Set the log output to JSON or default (plain) unstructured logging.#
+
+[#option-extended-log-console-output,role="options-extended"]
+!===
+!
+![.options-description-example]#*CLI:* `--log-console-output`#
+![.options-description-example]#*Env:* `KC_LOG_CONSOLE_OUTPUT`#
+!===
+|[.options-type]#default, json#
+
+|[.options-default]#default#
+
+|
+|
+[.options-key]#log-file#
+
+[.options-description]#Set the log file path and filename.#
+
+[#option-extended-log-file,role="options-extended"]
+!===
+!
+![.options-description-example]#*CLI:* `--log-file`#
+![.options-description-example]#*Env:* `KC_LOG_FILE`#
+!===
+|
+
+|[.options-default]#data/log/keycloak.log#
+
+|
+|
+[.options-key]#log-file-format#
+
+[.options-description]#Set a format specific to file log entries.#
+
+[#option-extended-log-file-format,role="options-extended"]
+!===
+!
+![.options-description-example]#*CLI:* `--log-file-format`#
+![.options-description-example]#*Env:* `KC_LOG_FILE_FORMAT`#
+!===
+|
+
+|[.options-default]#%d{yyyy-MM-dd HH:mm:ss,SSS} %-5p [%c] (%t) %s%e%n#
+
+|
+|
+[.options-key]#log-file-output#
+
+[.options-description]#Set the log output to JSON or default (plain) unstructured logging.#
+
+[#option-extended-log-file-output,role="options-extended"]
+!===
+!
+![.options-description-example]#*CLI:* `--log-file-output`#
+![.options-description-example]#*Env:* `KC_LOG_FILE_OUTPUT`#
+!===
+|[.options-type]#default, json#
+
+|[.options-default]#default#
+
+|
+|
+[.options-key]#log-gelf-facility#
+
+[.options-description]#The facility (name of the process) that sends the message.#
+
+[#option-extended-log-gelf-facility,role="options-extended"]
+!===
+!
+![.options-description-example]#*CLI:* `--log-gelf-facility`#
+![.options-description-example]#*Env:* `KC_LOG_GELF_FACILITY`#
+!===
+|
+
+|[.options-default]#keycloak#
+
+|
+|
+[.options-key]#log-gelf-host#
+
+[.options-description]#Hostname of the Logstash or Graylog Host.#
+
+[#option-extended-log-gelf-host,role="options-extended"]
+!===
+![.options-description-extended]#By default UDP is used, prefix the host with 'tcp:' to switch to TCP. Example: 'tcp:localhost'#
+![.options-description-example]#*CLI:* `--log-gelf-host`#
+![.options-description-example]#*Env:* `KC_LOG_GELF_HOST`#
+!===
+|
+
+|[.options-default]#localhost#
+
+|
+|
+[.options-key]#log-gelf-include-location#
+
+[.options-description]#Include source code location.#
+
+[#option-extended-log-gelf-include-location,role="options-extended"]
+!===
+!
+![.options-description-example]#*CLI:* `--log-gelf-include-location`#
+![.options-description-example]#*Env:* `KC_LOG_GELF_INCLUDE_LOCATION`#
+!===
+|[.options-type]#true, false#
+
+|[.options-default]#true#
+
+|
+|
+[.options-key]#log-gelf-include-message-parameters#
+
+[.options-description]#Include message parameters from the log event.#
+
+[#option-extended-log-gelf-include-message-parameters,role="options-extended"]
+!===
+!
+![.options-description-example]#*CLI:* `--log-gelf-include-message-parameters`#
+![.options-description-example]#*Env:* `KC_LOG_GELF_INCLUDE_MESSAGE_PARAMETERS`#
+!===
+|[.options-type]#true, false#
+
+|[.options-default]#true#
+
+|
+|
+[.options-key]#log-gelf-include-stack-trace#
+
+[.options-description]#If set to true, occuring stack traces are included in the 'StackTrace' field in the GELF output.#
+
+[#option-extended-log-gelf-include-stack-trace,role="options-extended"]
+!===
+!
+![.options-description-example]#*CLI:* `--log-gelf-include-stack-trace`#
+![.options-description-example]#*Env:* `KC_LOG_GELF_INCLUDE_STACK_TRACE`#
+!===
+|[.options-type]#true, false#
+
+|[.options-default]#true#
+
+|
+|
+[.options-key]#log-gelf-level#
+
+[.options-description]#The log level specifying which message levels will be logged by the GELF logger.#
+
+[#option-extended-log-gelf-level,role="options-extended"]
+!===
+![.options-description-extended]#Message levels lower than this value will be discarded.#
+![.options-description-example]#*CLI:* `--log-gelf-level`#
+![.options-description-example]#*Env:* `KC_LOG_GELF_LEVEL`#
+!===
+|
+
+|[.options-default]#INFO#
+
+|
+|
+[.options-key]#log-gelf-max-message-size#
+
+[.options-description]#Maximum message size (in bytes).#
+
+[#option-extended-log-gelf-max-message-size,role="options-extended"]
+!===
+![.options-description-extended]#If the message size is exceeded, GELF will submit the message in multiple chunks.#
+![.options-description-example]#*CLI:* `--log-gelf-max-message-size`#
+![.options-description-example]#*Env:* `KC_LOG_GELF_MAX_MESSAGE_SIZE`#
+!===
+|
+
+|[.options-default]#8192#
+
+|
+|
+[.options-key]#log-gelf-port#
+
+[.options-description]#The port the Logstash or Graylog Host is called on.#
+
+[#option-extended-log-gelf-port,role="options-extended"]
+!===
+!
+![.options-description-example]#*CLI:* `--log-gelf-port`#
+![.options-description-example]#*Env:* `KC_LOG_GELF_PORT`#
+!===
+|
+
+|[.options-default]#12201#
+
+|
+|
+[.options-key]#log-gelf-timestamp-format#
+
+[.options-description]#Set the format for the GELF timestamp field.#
+
+[#option-extended-log-gelf-timestamp-format,role="options-extended"]
+!===
+![.options-description-extended]#Uses Java SimpleDateFormat pattern.#
+![.options-description-example]#*CLI:* `--log-gelf-timestamp-format`#
+![.options-description-example]#*Env:* `KC_LOG_GELF_TIMESTAMP_FORMAT`#
+!===
+|
+
+|[.options-default]#yyyy-MM-dd HH:mm:ss,SSS#
+
+|
+|
+[.options-key]#log-level#
+
+[.options-description]#The log level of the root category or a comma-separated list of individual categories and their levels.#
+
+[#option-extended-log-level,role="options-extended"]
+!===
+![.options-description-extended]#For the root category, you don't need to specify a category.#
+![.options-description-example]#*CLI:* `--log-level`#
+![.options-description-example]#*Env:* `KC_LOG_LEVEL`#
+!===
+|
+
+|[.options-default]#info#
+
+|
+
+|===
+

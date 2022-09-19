@@ -1,0 +1,18 @@
+:links_server_installation_name: Keycloak Operator Installation
+:links_server_installation_url: #installation
+:links_server_basic-deployment_name: Basic Keycloak Deployment
+:links_server_basic-deployment_url: #basic-deployment
+:links_server_realm-import_name: Keycloak Realm Import
+:links_server_realm-import_url: #realm-import
+:links_server_advanced-configuration_name: Advanced configuration
+:links_server_advanced-configuration_url: #advanced-configuration
+:links_server_customizing-keycloak_name: Using custom Keycloak images
+:links_server_customizing-keycloak_url: #customizing-keycloak
+
+= Keycloak Operator guide
+
+* xref:installation.adoc[leveloffset=+1]
+* xref:basic-deployment.adoc[leveloffset=+1]
+* xref:realm-import.adoc[leveloffset=+1]
+* xref:advanced-configuration.adoc[leveloffset=+1]
+* xref:customizing-keycloak.adoc[leveloffset=+1]

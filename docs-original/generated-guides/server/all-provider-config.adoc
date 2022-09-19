@@ -1,0 +1,602 @@
+
+:guide-id: all-provider-config
+:guide-title: All provider configuration
+:guide-summary: Complete list of all the available provider configuration options
+:guide-priority: 999
+
+[[all-provider-config]]
+= All provider configuration
+
+
+== authentication-sessions
+=== infinispan
+[cols="12a,4,4",role="options"]
+|===
+| |Type|Default
+
+|
+[.options-key]#spi-authentication-sessions-infinispan-auth-sessions-limit#
+
+[.options-description]#The maximum number of concurrent authentication sessions per RootAuthenticationSession.#
+
+[#option-extended-spi-authentication-sessions-infinispan-auth-sessions-limit,role="options-extended"]
+!===
+!
+![.options-description-example]#*CLI:* `--spi-authentication-sessions-infinispan-auth-sessions-limit`#
+![.options-description-example]#*Env:* `KC_SPI_AUTHENTICATION_SESSIONS_INFINISPAN_AUTH_SESSIONS_LIMIT`#
+!===
+|[.options-type]#int#
+
+|[.options-default]#300#
+
+
+
+|===
+=== map
+[cols="12a,4,4",role="options"]
+|===
+| |Type|Default
+
+|
+[.options-key]#spi-authentication-sessions-map-auth-sessions-limit#
+
+[.options-description]#The maximum number of concurrent authentication sessions per RootAuthenticationSession.#
+
+[#option-extended-spi-authentication-sessions-map-auth-sessions-limit,role="options-extended"]
+!===
+!
+![.options-description-example]#*CLI:* `--spi-authentication-sessions-map-auth-sessions-limit`#
+![.options-description-example]#*Env:* `KC_SPI_AUTHENTICATION_SESSIONS_MAP_AUTH_SESSIONS_LIMIT`#
+!===
+|[.options-type]#int#
+
+|[.options-default]#300#
+
+
+
+|===
+== ciba-auth-channel
+=== ciba-http-auth-channel
+[cols="12a,4,4",role="options"]
+|===
+| |Type|Default
+
+|
+[.options-key]#spi-ciba-auth-channel-ciba-http-auth-channel-http-authentication-channel-uri#
+
+[.options-description]#The HTTP(S) URI of the authentication channel.#
+
+[#option-extended-spi-ciba-auth-channel-ciba-http-auth-channel-http-authentication-channel-uri,role="options-extended"]
+!===
+!
+![.options-description-example]#*CLI:* `--spi-ciba-auth-channel-ciba-http-auth-channel-http-authentication-channel-uri`#
+![.options-description-example]#*Env:* `KC_SPI_CIBA_AUTH_CHANNEL_CIBA_HTTP_AUTH_CHANNEL_HTTP_AUTHENTICATION_CHANNEL_URI`#
+!===
+|[.options-type]#string#
+
+|[.options-default]#none#
+
+
+
+|===
+== connections-http-client
+=== default
+[cols="12a,4,4",role="options"]
+|===
+| |Type|Default
+
+|
+[.options-key]#spi-connections-http-client-default-client-key-password#
+
+[.options-description]#The key password.#
+
+[#option-extended-spi-connections-http-client-default-client-key-password,role="options-extended"]
+!===
+!
+![.options-description-example]#*CLI:* `--spi-connections-http-client-default-client-key-password`#
+![.options-description-example]#*Env:* `KC_SPI_CONNECTIONS_HTTP_CLIENT_DEFAULT_CLIENT_KEY_PASSWORD`#
+!===
+|[.options-type]#string#
+
+|[.options-default]#-1#
+
+
+|
+[.options-key]#spi-connections-http-client-default-client-keystore#
+
+[.options-description]#The file path of the key store from where the key material is going to be read from to set-up TLS connections.#
+
+[#option-extended-spi-connections-http-client-default-client-keystore,role="options-extended"]
+!===
+!
+![.options-description-example]#*CLI:* `--spi-connections-http-client-default-client-keystore`#
+![.options-description-example]#*Env:* `KC_SPI_CONNECTIONS_HTTP_CLIENT_DEFAULT_CLIENT_KEYSTORE`#
+!===
+|[.options-type]#string#
+
+|[.options-default]#none#
+
+
+|
+[.options-key]#spi-connections-http-client-default-client-keystore-password#
+
+[.options-description]#The key store password.#
+
+[#option-extended-spi-connections-http-client-default-client-keystore-password,role="options-extended"]
+!===
+!
+![.options-description-example]#*CLI:* `--spi-connections-http-client-default-client-keystore-password`#
+![.options-description-example]#*Env:* `KC_SPI_CONNECTIONS_HTTP_CLIENT_DEFAULT_CLIENT_KEYSTORE_PASSWORD`#
+!===
+|[.options-type]#string#
+
+|[.options-default]#none#
+
+
+|
+[.options-key]#spi-connections-http-client-default-connection-pool-size#
+
+[.options-description]#Assigns maximum total connection value.#
+
+[#option-extended-spi-connections-http-client-default-connection-pool-size,role="options-extended"]
+!===
+!
+![.options-description-example]#*CLI:* `--spi-connections-http-client-default-connection-pool-size`#
+![.options-description-example]#*Env:* `KC_SPI_CONNECTIONS_HTTP_CLIENT_DEFAULT_CONNECTION_POOL_SIZE`#
+!===
+|[.options-type]#int#
+
+|[.options-default]#none#
+
+
+|
+[.options-key]#spi-connections-http-client-default-connection-ttl-millis#
+
+[.options-description]#Sets maximum time, in milliseconds, to live for persistent connections.#
+
+[#option-extended-spi-connections-http-client-default-connection-ttl-millis,role="options-extended"]
+!===
+!
+![.options-description-example]#*CLI:* `--spi-connections-http-client-default-connection-ttl-millis`#
+![.options-description-example]#*Env:* `KC_SPI_CONNECTIONS_HTTP_CLIENT_DEFAULT_CONNECTION_TTL_MILLIS`#
+!===
+|[.options-type]#long#
+
+|[.options-default]#-1#
+
+
+|
+[.options-key]#spi-connections-http-client-default-disable-cookies#
+
+[.options-description]#Disables state (cookie) management.#
+
+[#option-extended-spi-connections-http-client-default-disable-cookies,role="options-extended"]
+!===
+!
+![.options-description-example]#*CLI:* `--spi-connections-http-client-default-disable-cookies`#
+![.options-description-example]#*Env:* `KC_SPI_CONNECTIONS_HTTP_CLIENT_DEFAULT_DISABLE_COOKIES`#
+!===
+|[.options-type]#boolean#
+
+|[.options-default]#true#
+
+
+|
+[.options-key]#spi-connections-http-client-default-disable-trust-manager#
+
+[.options-description]#Disable trust management and hostname verification.#
+
+[#option-extended-spi-connections-http-client-default-disable-trust-manager,role="options-extended"]
+!===
+![.options-description-extended]#NOTE this is a security hole, so only set this option if you cannot or do not want to verify the identity of the host you are communicating with.#
+![.options-description-example]#*CLI:* `--spi-connections-http-client-default-disable-trust-manager`#
+![.options-description-example]#*Env:* `KC_SPI_CONNECTIONS_HTTP_CLIENT_DEFAULT_DISABLE_TRUST_MANAGER`#
+!===
+|[.options-type]#boolean#
+
+|[.options-default]#false#
+
+
+|
+[.options-key]#spi-connections-http-client-default-establish-connection-timeout-millis#
+
+[.options-description]#When trying to make an initial socket connection, what is the timeout?#
+
+[#option-extended-spi-connections-http-client-default-establish-connection-timeout-millis,role="options-extended"]
+!===
+!
+![.options-description-example]#*CLI:* `--spi-connections-http-client-default-establish-connection-timeout-millis`#
+![.options-description-example]#*Env:* `KC_SPI_CONNECTIONS_HTTP_CLIENT_DEFAULT_ESTABLISH_CONNECTION_TIMEOUT_MILLIS`#
+!===
+|[.options-type]#long#
+
+|[.options-default]#-1#
+
+
+|
+[.options-key]#spi-connections-http-client-default-max-connection-idle-time-millis#
+
+[.options-description]#Sets the time, in milliseconds, for evicting idle connections from the pool.#
+
+[#option-extended-spi-connections-http-client-default-max-connection-idle-time-millis,role="options-extended"]
+!===
+!
+![.options-description-example]#*CLI:* `--spi-connections-http-client-default-max-connection-idle-time-millis`#
+![.options-description-example]#*Env:* `KC_SPI_CONNECTIONS_HTTP_CLIENT_DEFAULT_MAX_CONNECTION_IDLE_TIME_MILLIS`#
+!===
+|[.options-type]#long#
+
+|[.options-default]#900000#
+
+
+|
+[.options-key]#spi-connections-http-client-default-max-pooled-per-route#
+
+[.options-description]#Assigns maximum connection per route value.#
+
+[#option-extended-spi-connections-http-client-default-max-pooled-per-route,role="options-extended"]
+!===
+!
+![.options-description-example]#*CLI:* `--spi-connections-http-client-default-max-pooled-per-route`#
+![.options-description-example]#*Env:* `KC_SPI_CONNECTIONS_HTTP_CLIENT_DEFAULT_MAX_POOLED_PER_ROUTE`#
+!===
+|[.options-type]#int#
+
+|[.options-default]#64#
+
+
+|
+[.options-key]#spi-connections-http-client-default-proxy-mappings#
+
+[.options-description]#Denotes the combination of a regex based hostname pattern and a proxy-uri in the form of hostnamePattern;proxyUri.#
+
+[#option-extended-spi-connections-http-client-default-proxy-mappings,role="options-extended"]
+!===
+!
+![.options-description-example]#*CLI:* `--spi-connections-http-client-default-proxy-mappings`#
+![.options-description-example]#*Env:* `KC_SPI_CONNECTIONS_HTTP_CLIENT_DEFAULT_PROXY_MAPPINGS`#
+!===
+|[.options-type]#string#
+
+|[.options-default]#none#
+
+
+|
+[.options-key]#spi-connections-http-client-default-reuse-connections#
+
+[.options-description]#If connections should be reused.#
+
+[#option-extended-spi-connections-http-client-default-reuse-connections,role="options-extended"]
+!===
+!
+![.options-description-example]#*CLI:* `--spi-connections-http-client-default-reuse-connections`#
+![.options-description-example]#*Env:* `KC_SPI_CONNECTIONS_HTTP_CLIENT_DEFAULT_REUSE_CONNECTIONS`#
+!===
+|[.options-type]#boolean#
+
+|[.options-default]#true#
+
+
+|
+[.options-key]#spi-connections-http-client-default-socket-timeout-millis#
+
+[.options-description]#Socket inactivity timeout.#
+
+[#option-extended-spi-connections-http-client-default-socket-timeout-millis,role="options-extended"]
+!===
+!
+![.options-description-example]#*CLI:* `--spi-connections-http-client-default-socket-timeout-millis`#
+![.options-description-example]#*Env:* `KC_SPI_CONNECTIONS_HTTP_CLIENT_DEFAULT_SOCKET_TIMEOUT_MILLIS`#
+!===
+|[.options-type]#long#
+
+|[.options-default]#5000#
+
+
+
+|===
+== connections-jpa
+=== legacy
+[cols="12a,4,4",role="options"]
+|===
+| |Type|Default
+
+|
+[.options-key]#spi-connections-jpa-legacy-initialize-empty#
+
+[.options-description]#Initialize database if empty.#
+
+[#option-extended-spi-connections-jpa-legacy-initialize-empty,role="options-extended"]
+!===
+![.options-description-extended]#If set to false the database has to be manually initialized. If you want to manually initialize the database set migrationStrategy to manual which will create a file with SQL commands to initialize the database.#
+![.options-description-example]#*CLI:* `--spi-connections-jpa-legacy-initialize-empty`#
+![.options-description-example]#*Env:* `KC_SPI_CONNECTIONS_JPA_LEGACY_INITIALIZE_EMPTY`#
+!===
+|[.options-type]#boolean#
+
+|[.options-default]#true#
+
+
+|
+[.options-key]#spi-connections-jpa-legacy-migration-export#
+
+[.options-description]#Path for where to write manual database initialization/migration file.#
+
+[#option-extended-spi-connections-jpa-legacy-migration-export,role="options-extended"]
+!===
+!
+![.options-description-example]#*CLI:* `--spi-connections-jpa-legacy-migration-export`#
+![.options-description-example]#*Env:* `KC_SPI_CONNECTIONS_JPA_LEGACY_MIGRATION_EXPORT`#
+!===
+|[.options-type]#string#
+
+|[.options-default]#none#
+
+
+|
+[.options-key]#spi-connections-jpa-legacy-migration-strategy#
+
+[.options-description]#Strategy to use to migrate database.#
+
+[#option-extended-spi-connections-jpa-legacy-migration-strategy,role="options-extended"]
+!===
+![.options-description-extended]#Valid values are update, manual and validate. Update will automatically migrate the database schema. Manual will export the required changes to a file with SQL commands that you can manually execute on the database. Validate will simply check if the database is up-to-date.#
+![.options-description-example]#*CLI:* `--spi-connections-jpa-legacy-migration-strategy`#
+![.options-description-example]#*Env:* `KC_SPI_CONNECTIONS_JPA_LEGACY_MIGRATION_STRATEGY`#
+!===
+|[.options-type]#update, manual, validate#
+
+|[.options-default]#update#
+
+
+
+|===
+== dblock
+=== jpa
+[cols="12a,4,4",role="options"]
+|===
+| |Type|Default
+
+|
+[.options-key]#spi-dblock-jpa-lock-wait-timeout#
+
+[.options-description]#The maximum time to wait when waiting to release a database lock.#
+
+[#option-extended-spi-dblock-jpa-lock-wait-timeout,role="options-extended"]
+!===
+!
+![.options-description-example]#*CLI:* `--spi-dblock-jpa-lock-wait-timeout`#
+![.options-description-example]#*Env:* `KC_SPI_DBLOCK_JPA_LOCK_WAIT_TIMEOUT`#
+!===
+|[.options-type]#int#
+
+|[.options-default]#none#
+
+
+
+|===
+== events-listener
+=== email
+[cols="12a,4,4",role="options"]
+|===
+| |Type|Default
+
+|
+[.options-key]#spi-events-listener-email-exclude-events#
+
+[.options-description]#A comma-separated list of events that should not be sent via email to the user's account.#
+
+[#option-extended-spi-events-listener-email-exclude-events,role="options-extended"]
+!===
+!
+![.options-description-example]#*CLI:* `--spi-events-listener-email-exclude-events`#
+![.options-description-example]#*Env:* `KC_SPI_EVENTS_LISTENER_EMAIL_EXCLUDE_EVENTS`#
+!===
+|[.options-type]#authreqid_to_token, authreqid_to_token_error, client_delete, client_delete_error, client_info, client_info_error, client_initiated_account_linking, client_initiated_account_linking_error, client_login, client_login_error, client_register, client_register_error, client_update, client_update_error, code_to_token, code_to_token_error, custom_required_action, custom_required_action_error, delete_account, delete_account_error, execute_action_token, execute_action_token_error, execute_actions, execute_actions_error, federated_identity_link, federated_identity_link_error, grant_consent, grant_consent_error, identity_provider_first_login, identity_provider_first_login_error, identity_provider_link_account, identity_provider_link_account_error, identity_provider_login, identity_provider_login_error, identity_provider_post_login, identity_provider_post_login_error, identity_provider_response, identity_provider_response_error, identity_provider_retrieve_token, identity_provider_retrieve_token_error, impersonate, impersonate_error, introspect_token, introspect_token_error, invalid_signature, invalid_signature_error, login, login_error, logout, logout_error, oauth2_device_auth, oauth2_device_auth_error, oauth2_device_code_to_token, oauth2_device_code_to_token_error, oauth2_device_verify_user_code, oauth2_device_verify_user_code_error, permission_token, permission_token_error, pushed_authorization_request, pushed_authorization_request_error, refresh_token, refresh_token_error, register, register_error, register_node, register_node_error, remove_federated_identity, remove_federated_identity_error, remove_totp, remove_totp_error, reset_password, reset_password_error, restart_authentication, restart_authentication_error, revoke_grant, revoke_grant_error, send_identity_provider_link, send_identity_provider_link_error, send_reset_password, send_reset_password_error, send_verify_email, send_verify_email_error, token_exchange, token_exchange_error, unregister_node, unregister_node_error, update_consent, update_consent_error, update_email, update_email_error, update_password, update_password_error, update_profile, update_profile_error, update_totp, update_totp_error, user_info_request, user_info_request_error, validate_access_token, validate_access_token_error, verify_email, verify_email_error, verify_profile, verify_profile_error#
+
+|[.options-default]#none#
+
+
+|
+[.options-key]#spi-events-listener-email-include-events#
+
+[.options-description]#A comma-separated list of events that should be sent via email to the user's account.#
+
+[#option-extended-spi-events-listener-email-include-events,role="options-extended"]
+!===
+!
+![.options-description-example]#*CLI:* `--spi-events-listener-email-include-events`#
+![.options-description-example]#*Env:* `KC_SPI_EVENTS_LISTENER_EMAIL_INCLUDE_EVENTS`#
+!===
+|[.options-type]#authreqid_to_token, authreqid_to_token_error, client_delete, client_delete_error, client_info, client_info_error, client_initiated_account_linking, client_initiated_account_linking_error, client_login, client_login_error, client_register, client_register_error, client_update, client_update_error, code_to_token, code_to_token_error, custom_required_action, custom_required_action_error, delete_account, delete_account_error, execute_action_token, execute_action_token_error, execute_actions, execute_actions_error, federated_identity_link, federated_identity_link_error, grant_consent, grant_consent_error, identity_provider_first_login, identity_provider_first_login_error, identity_provider_link_account, identity_provider_link_account_error, identity_provider_login, identity_provider_login_error, identity_provider_post_login, identity_provider_post_login_error, identity_provider_response, identity_provider_response_error, identity_provider_retrieve_token, identity_provider_retrieve_token_error, impersonate, impersonate_error, introspect_token, introspect_token_error, invalid_signature, invalid_signature_error, login, login_error, logout, logout_error, oauth2_device_auth, oauth2_device_auth_error, oauth2_device_code_to_token, oauth2_device_code_to_token_error, oauth2_device_verify_user_code, oauth2_device_verify_user_code_error, permission_token, permission_token_error, pushed_authorization_request, pushed_authorization_request_error, refresh_token, refresh_token_error, register, register_error, register_node, register_node_error, remove_federated_identity, remove_federated_identity_error, remove_totp, remove_totp_error, reset_password, reset_password_error, restart_authentication, restart_authentication_error, revoke_grant, revoke_grant_error, send_identity_provider_link, send_identity_provider_link_error, send_reset_password, send_reset_password_error, send_verify_email, send_verify_email_error, token_exchange, token_exchange_error, unregister_node, unregister_node_error, update_consent, update_consent_error, update_email, update_email_error, update_password, update_password_error, update_profile, update_profile_error, update_totp, update_totp_error, user_info_request, user_info_request_error, validate_access_token, validate_access_token_error, verify_email, verify_email_error, verify_profile, verify_profile_error#
+
+|[.options-default]#All events#
+
+
+
+|===
+=== jboss-logging
+[cols="12a,4,4",role="options"]
+|===
+| |Type|Default
+
+|
+[.options-key]#spi-events-listener-jboss-logging-error-level#
+
+[.options-description]#The log level for error messages.#
+
+[#option-extended-spi-events-listener-jboss-logging-error-level,role="options-extended"]
+!===
+!
+![.options-description-example]#*CLI:* `--spi-events-listener-jboss-logging-error-level`#
+![.options-description-example]#*Env:* `KC_SPI_EVENTS_LISTENER_JBOSS_LOGGING_ERROR_LEVEL`#
+!===
+|[.options-type]#debug, error, fatal, info, trace, warn#
+
+|[.options-default]#warn#
+
+
+|
+[.options-key]#spi-events-listener-jboss-logging-success-level#
+
+[.options-description]#The log level for success messages.#
+
+[#option-extended-spi-events-listener-jboss-logging-success-level,role="options-extended"]
+!===
+!
+![.options-description-example]#*CLI:* `--spi-events-listener-jboss-logging-success-level`#
+![.options-description-example]#*Env:* `KC_SPI_EVENTS_LISTENER_JBOSS_LOGGING_SUCCESS_LEVEL`#
+!===
+|[.options-type]#debug, error, fatal, info, trace, warn#
+
+|[.options-default]#debug#
+
+
+
+|===
+== resource-encoding
+=== gzip
+[cols="12a,4,4",role="options"]
+|===
+| |Type|Default
+
+|
+[.options-key]#spi-resource-encoding-gzip-excluded-content-types#
+
+[.options-description]#A space separated list of content-types to exclude from encoding.#
+
+[#option-extended-spi-resource-encoding-gzip-excluded-content-types,role="options-extended"]
+!===
+!
+![.options-description-example]#*CLI:* `--spi-resource-encoding-gzip-excluded-content-types`#
+![.options-description-example]#*Env:* `KC_SPI_RESOURCE_ENCODING_GZIP_EXCLUDED_CONTENT_TYPES`#
+!===
+|[.options-type]#string#
+
+|[.options-default]#image/png image/jpeg#
+
+
+
+|===
+== sticky-session-encoder
+=== infinispan
+[cols="12a,4,4",role="options"]
+|===
+| |Type|Default
+
+|
+[.options-key]#spi-sticky-session-encoder-infinispan-should-attach-route#
+
+[.options-description]#If the route should be attached to cookies to reflect the node that owns a particular session.#
+
+[#option-extended-spi-sticky-session-encoder-infinispan-should-attach-route,role="options-extended"]
+!===
+!
+![.options-description-example]#*CLI:* `--spi-sticky-session-encoder-infinispan-should-attach-route`#
+![.options-description-example]#*Env:* `KC_SPI_STICKY_SESSION_ENCODER_INFINISPAN_SHOULD_ATTACH_ROUTE`#
+!===
+|[.options-type]#boolean#
+
+|[.options-default]#true#
+
+
+
+|===
+== truststore
+=== file
+[cols="12a,4,4",role="options"]
+|===
+| |Type|Default
+
+|
+[.options-key]#spi-truststore-file-file#
+
+[.options-description]#The file path of the trust store from where the certificates are going to be read from to validate TLS connections.#
+
+[#option-extended-spi-truststore-file-file,role="options-extended"]
+!===
+!
+![.options-description-example]#*CLI:* `--spi-truststore-file-file`#
+![.options-description-example]#*Env:* `KC_SPI_TRUSTSTORE_FILE_FILE`#
+!===
+|[.options-type]#string#
+
+|[.options-default]#none#
+
+
+|
+[.options-key]#spi-truststore-file-hostname-verification-policy#
+
+[.options-description]#The hostname verification policy.#
+
+[#option-extended-spi-truststore-file-hostname-verification-policy,role="options-extended"]
+!===
+!
+![.options-description-example]#*CLI:* `--spi-truststore-file-hostname-verification-policy`#
+![.options-description-example]#*Env:* `KC_SPI_TRUSTSTORE_FILE_HOSTNAME_VERIFICATION_POLICY`#
+!===
+|[.options-type]#any, wildcard, strict#
+
+|[.options-default]#wildcard#
+
+
+|
+[.options-key]#spi-truststore-file-password#
+
+[.options-description]#The trust store password.#
+
+[#option-extended-spi-truststore-file-password,role="options-extended"]
+!===
+!
+![.options-description-example]#*CLI:* `--spi-truststore-file-password`#
+![.options-description-example]#*Env:* `KC_SPI_TRUSTSTORE_FILE_PASSWORD`#
+!===
+|[.options-type]#string#
+
+|[.options-default]#none#
+
+
+
+|===
+== well-known
+=== openid-configuration
+[cols="12a,4,4",role="options"]
+|===
+| |Type|Default
+
+|
+[.options-key]#spi-well-known-openid-configuration-include-client-scopes#
+
+[.options-description]#If client scopes should be used to calculate the list of supported scopes.#
+
+[#option-extended-spi-well-known-openid-configuration-include-client-scopes,role="options-extended"]
+!===
+!
+![.options-description-example]#*CLI:* `--spi-well-known-openid-configuration-include-client-scopes`#
+![.options-description-example]#*Env:* `KC_SPI_WELL_KNOWN_OPENID_CONFIGURATION_INCLUDE_CLIENT_SCOPES`#
+!===
+|[.options-type]#boolean#
+
+|[.options-default]#true#
+
+
+|
+[.options-key]#spi-well-known-openid-configuration-openid-configuration-override#
+
+[.options-description]#The file path from where the metadata should be loaded from.#
+
+[#option-extended-spi-well-known-openid-configuration-openid-configuration-override,role="options-extended"]
+!===
+![.options-description-extended]#You can use an absolute file path or, if the file is in the server classpath, use the 'classpath:' prefix to load the file from the classpath.#
+![.options-description-example]#*CLI:* `--spi-well-known-openid-configuration-openid-configuration-override`#
+![.options-description-example]#*Env:* `KC_SPI_WELL_KNOWN_OPENID_CONFIGURATION_OPENID_CONFIGURATION_OVERRIDE`#
+!===
+|[.options-type]#string#
+
+|[.options-default]#none#
+
+
+
+|===
+
+

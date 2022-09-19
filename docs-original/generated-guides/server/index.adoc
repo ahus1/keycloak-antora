@@ -1,0 +1,57 @@
+:links_server_configuration_name: Configuring Keycloak
+:links_server_configuration_url: #configuration
+:links_server_configuration-production_name: Configuring Keycloak for production
+:links_server_configuration-production_url: #configuration-production
+:links_server_all-config_name: All configuration
+:links_server_all-config_url: #all-config
+:links_server_features_name: Enabling and disabling features
+:links_server_features_url: #features
+:links_server_containers_name: Running Keycloak in a container
+:links_server_containers_url: #containers
+:links_server_all-provider-config_name: All provider configuration
+:links_server_all-provider-config_url: #all-provider-config
+:links_server_enabletls_name: Configuring TLS
+:links_server_enabletls_url: #enabletls
+:links_server_keycloak-truststore_name: Configuring a Truststore
+:links_server_keycloak-truststore_url: #keycloak-truststore
+:links_server_caching_name: Configuring distributed caches
+:links_server_caching_url: #caching
+:links_server_logging_name: Configuring logging
+:links_server_logging_url: #logging
+:links_server_outgoinghttp_name: Configuring outgoing HTTP requests
+:links_server_outgoinghttp_url: #outgoinghttp
+:links_server_configuration-provider_name: Configuring providers
+:links_server_configuration-provider_url: #configuration-provider
+:links_server_db_name: Configuring the database
+:links_server_db_url: #db
+:links_server_hostname_name: Configuring the hostname
+:links_server_hostname_url: #hostname
+:links_server_health_name: Enabling Keycloak Health checks
+:links_server_health_url: #health
+:links_server_importExport_name: Importing and Exporting Realms
+:links_server_importExport_url: #importExport
+:links_server_vault_name: Using Kubernetes secrets
+:links_server_vault_url: #vault
+:links_server_reverseproxy_name: Using a reverse proxy
+:links_server_reverseproxy_url: #reverseproxy
+
+= Keycloak server guide
+
+* xref:configuration.adoc[leveloffset=+1]
+* xref:configuration-production.adoc[leveloffset=+1]
+* xref:all-config.adoc[leveloffset=+1]
+* xref:features.adoc[leveloffset=+1]
+* xref:containers.adoc[leveloffset=+1]
+* xref:all-provider-config.adoc[leveloffset=+1]
+* xref:enabletls.adoc[leveloffset=+1]
+* xref:keycloak-truststore.adoc[leveloffset=+1]
+* xref:caching.adoc[leveloffset=+1]
+* xref:logging.adoc[leveloffset=+1]
+* xref:outgoinghttp.adoc[leveloffset=+1]
+* xref:configuration-provider.adoc[leveloffset=+1]
+* xref:db.adoc[leveloffset=+1]
+* xref:hostname.adoc[leveloffset=+1]
+* xref:health.adoc[leveloffset=+1]
+* xref:importExport.adoc[leveloffset=+1]
+* xref:vault.adoc[leveloffset=+1]
+* xref:reverseproxy.adoc[leveloffset=+1]

@@ -1,0 +1,106 @@
+
+:guide-id: vault
+:guide-title: Using Kubernetes secrets
+:guide-summary: Learn how to use Kubernetes/OpenShift secrets in Keycloak
+:guide-priority: 30
+
+[[vault]]
+= Using Kubernetes secrets
+
+
+Keycloak supports a file-based vault implementation for Kubernetes/OpenShift secrets. Mount Kubernetes secrets into the Keycloak Container, and the data fields will be available in the mounted folder with a flat-file structure.
+
+== Available integrations
+You can use Kubernetes/OpenShift secrets for the following purposes:
+
+* Obtain the SMTP Mail server Password
+* Obtain the LDAP Bind Credential when using LDAP-based User Federation
+* Obtain the OIDC identity providers Client Secret when integrating external identity providers
+
+== Enabling the vault
+Enable the file based vault by building Keycloak using the following build option:
+
+[source,bash]
+----
+bin/kc.[sh|bat] build --vault=file
+----
+
+== Setting the base directory to lookup secrets
+Kubernetes/OpenShift secrets are basically mounted files. To configure a directory where these files should be mounted, enter this command:
+
+[source,bash]
+----
+bin/kc.[sh|bat] start --vault-dir=/my/path
+----
+
+== Realm-specific secret files
+Kubernetes/OpenShift Secrets are used on a per-realm basis in Keycloak, which requires a naming convention for the file in place:
+[source, bash]
+----
+${vault.<realmname>_<secretname>}
+----
+
+=== Using underscores in the Name
+To process the secret correctly, you double all underscores in the <realmname> or the <secretname>, separated by a single underscore.
+
+.Example
+* Realm Name: `sso_realm`
+* Desired Name: `ldap_credential`
+* Resulting file Name:
+[source, bash]
+----
+sso__realm_ldap__credential
+----
+Note the doubled underscores between __sso__ and __realm__ and also between __ldap__ and __credential__.
+
+== Example: Use an LDAP bind credential secret in the Admin Console
+
+.Example setup
+* A realm named `secrettest`
+* A desired Name `ldapBc` for the bind Credential
+* Resulting file name: `secrettest_ldapBc`
+
+.Usage in Admin Console
+You can then use this secret from the Admin Console by using `${vault.ldapBc}` as the value for the `Bind Credential` when configuring your LDAP User federation.
+
+
+== Relevant options
+
+[cols="12a,4,4,1",role="options"]
+|===
+| |Type|Default|
+
+|
+[.options-key]#vault#
+
+[.options-description]#Enables a vault provider.#
+
+[#option-extended-vault,role="options-extended"]
+!===
+!
+![.options-description-example]#*CLI:* `--vault`#
+![.options-description-example]#*Env:* `KC_VAULT`#
+!===
+|[.options-type]#file, hashicorp#
+
+|
+
+|icon:tools[role=options-build]
+|
+[.options-key]#vault-dir#
+
+[.options-description]#If set, secrets can be obtained by reading the content of files within the given directory.#
+
+[#option-extended-vault-dir,role="options-extended"]
+!===
+!
+![.options-description-example]#*CLI:* `--vault-dir`#
+![.options-description-example]#*Env:* `KC_VAULT_DIR`#
+!===
+|
+
+|
+
+|
+
+|===
