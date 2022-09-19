@@ -4,6 +4,8 @@
 
 antora::
 Folder with templates for the site and Antora's configurations
++
+This should eventually be moved to its own Git repository as it is independent of the modules and their releases.
 
 doc-original::
 The server-guide and operator-guide in the new format, and the admin-guide in the old format.

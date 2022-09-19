@@ -51,6 +51,7 @@ asciidoc:
     idprefix: ''
     idseparator: '-'
     source-highlighter: highlightjs-ext
+    experimental: ''
     page-pagination: ''
     project_name: Keycloak
     project_name_full: Keycloak
