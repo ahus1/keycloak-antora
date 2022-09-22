@@ -26,14 +26,14 @@ jobs:
           node-version: '16.x'
           cache: 'yarn'
           cache-dependency-path: 'antora/yarn.lock'
-      - name: Build docs
-        working-directory: antora
-        run: ./build.sh
       - uses: ruby/setup-ruby@v1
         with:
           ruby-version: '3.0'
           bundler-cache: true
           working-directory: antora
+      - name: Build docs
+        working-directory: antora
+        run: ./build.sh
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
