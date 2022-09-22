@@ -4,30 +4,30 @@
 
 From the Admin Console, you have a wide range of actions you can perform to manage users.
 
-include::partial$users/proc-creating-user.adoc[leveloffset=+2]
+include::partial$users/proc-creating-user.adoc[leveloffset=+1]
 
-include::partial$users/ref-user-credentials.adoc[leveloffset=+2]
-include::partial$users/proc-setting-password-user.adoc[leveloffset=+3]
-include::partial$users/proc-creating-otp.adoc[leveloffset=+3]
+include::partial$users/ref-user-credentials.adoc[leveloffset=+1]
+include::partial$users/proc-setting-password-user.adoc[leveloffset=+1]
+include::partial$users/proc-creating-otp.adoc[leveloffset=+1]
 
-include::partial$users/proc-configuring-user-attributes.adoc[leveloffset=+2]
-include::partial$users/con-user-registration.adoc[leveloffset=+2]
-include::partial$users/proc-enabling-user-registration.adoc[leveloffset=3]
-include::partial$users/proc-registering-new-user.adoc[leveloffset=3]
+include::partial$users/proc-configuring-user-attributes.adoc[leveloffset=+1]
+include::partial$users/con-user-registration.adoc[leveloffset=+1]
+include::partial$users/proc-enabling-user-registration.adoc[leveloffset=+1]
+include::partial$users/proc-registering-new-user.adoc[leveloffset=+1]
 
-include::partial$users/con-required-actions.adoc[leveloffset=+2]
-include::partial$users/proc-setting-required-actions.adoc[leveloffset=+3]
-include::partial$users/proc-setting-default-required-actions.adoc[leveloffset=+3]
-include::partial$users/proc-enabling-terms-conditions.adoc[leveloffset=+3]
+include::partial$users/con-required-actions.adoc[leveloffset=+1]
+include::partial$users/proc-setting-required-actions.adoc[leveloffset=+1]
+include::partial$users/proc-setting-default-required-actions.adoc[leveloffset=+1]
+include::partial$users/proc-enabling-terms-conditions.adoc[leveloffset=+1]
 
-include::partial$users/proc-searching-user.adoc[leveloffset=+2]
+include::partial$users/proc-searching-user.adoc[leveloffset=+1]
 
-include::partial$users/proc-deleting-user.adoc[leveloffset=+2]
-include::partial$users/proc-allow-user-to-delete-account.adoc[leveloffset=+2]
+include::partial$users/proc-deleting-user.adoc[leveloffset=+1]
+include::partial$users/proc-allow-user-to-delete-account.adoc[leveloffset=+1]
 
-include::partial$users/con-user-impersonation.adoc[leveloffset=+2]
-include::partial$users/proc-enabling-recaptcha.adoc[leveloffset=+2]
+include::partial$users/con-user-impersonation.adoc[leveloffset=+1]
+include::partial$users/proc-enabling-recaptcha.adoc[leveloffset=+1]
 
-include::partial$users/user-profile.adoc[leveloffset=+2]
-include::partial$users/ref-personal-data-collected.adoc[leveloffset=+2]
+include::partial$users/user-profile.adoc[leveloffset=+1]
+include::partial$users/ref-personal-data-collected.adoc[leveloffset=+1]
 
