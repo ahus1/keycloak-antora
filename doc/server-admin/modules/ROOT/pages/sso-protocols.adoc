@@ -3,6 +3,8 @@
 [role="_abstract"]
 This section discusses authentication protocols, the {project_name} authentication server and how applications, secured by the {project_name} authentication server, interact with these protocols.
 
+:leveloffset: -1
+
 include::partial$sso-protocols/con-oidc.adoc[]
 include::partial$sso-protocols/con-oidc-auth-flows.adoc[]
 include::partial$sso-protocols/con-server-oidc-uri-endpoints.adoc[]
@@ -10,3 +12,5 @@ include::partial$sso-protocols/con-saml.adoc[]
 include::partial$sso-protocols/con-saml-bindings.adoc[]
 include::partial$sso-protocols/ref-saml-vs-oidc.adoc[]
 include::partial$sso-protocols/con-sso-docker.adoc[]
+
+:leveloffset: +1

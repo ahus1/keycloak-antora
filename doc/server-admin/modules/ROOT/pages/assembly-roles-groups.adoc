@@ -6,12 +6,12 @@ A role typically applies to one type of user. For example, an organization may i
 
 There is a global namespace for roles and each client also has its own dedicated namespace where roles can be defined.
 
-include::partial$roles-groups/proc-creating-realm-roles.adoc[leveloffset=2]
-include::partial$roles-groups/con-client-roles.adoc[leveloffset=2]
-include::partial$roles-groups/proc-converting-composite-roles.adoc[leveloffset=2]
-include::partial$roles-groups/proc-assigning-role-mappings.adoc[leveloffset=2]
-include::partial$roles-groups/proc-using-default-roles.adoc[leveloffset=2]
-include::partial$roles-groups/con-role-scope-mappings.adoc[leveloffset=2]
-include::partial$roles-groups/proc-managing-groups.adoc[leveloffset=2]
-include::partial$roles-groups/con-comparing-groups-roles.adoc[leveloffset=3]
-include::partial$roles-groups/proc-specifying-default-groups.adoc[leveloffset=3]
+include::partial$roles-groups/proc-creating-realm-roles.adoc[leveloffset=+1]
+include::partial$roles-groups/con-client-roles.adoc[leveloffset=+1]
+include::partial$roles-groups/proc-converting-composite-roles.adoc[leveloffset=+1]
+include::partial$roles-groups/proc-assigning-role-mappings.adoc[leveloffset=+1]
+include::partial$roles-groups/proc-using-default-roles.adoc[leveloffset=+1]
+include::partial$roles-groups/con-role-scope-mappings.adoc[leveloffset=+1]
+include::partial$roles-groups/proc-managing-groups.adoc[leveloffset=+1]
+include::partial$roles-groups/con-comparing-groups-roles.adoc[leveloffset=+2]
+include::partial$roles-groups/proc-specifying-default-groups.adoc[leveloffset=+2]
