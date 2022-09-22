@@ -1,11 +1,23 @@
 = Keycloak docs with Antora Proof-of-Concept
 
+== What to see here
+
+* How the existing docs of the new Quarkus guides and classic guides can be migrated to Antora
+
+* How a minimal Antora site could look like
+
+* How Antora Assembler can create a single AsciiDoc file that can then be processed downstream; as a placeholder Asciidoctor PDF creates a PDF from the source.
++
+This uses a snapshot release of Antora Assembler as only this supports the include with leveloffset.
+
 == Content of the repository
 
 antora::
 Folder with templates for the site and Antora's configurations
 +
 This should eventually be moved to its own Git repository as it is independent of the modules and their releases.
++
+Enabled with antora-assembler which will create one big AsciiDoc file per component in the build folder.
 
 doc-original::
 The server-guide and operator-guide in the new format, and the admin-guide in the old format.
