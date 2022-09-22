@@ -20,7 +20,8 @@ urls:
 
 antora:
   extensions:
-    - require: '@antora/lunr-extension'
+    - '@antora/lunr-extension'
+    - '@antora/pdf-extension'
 
 ui:
   bundle:

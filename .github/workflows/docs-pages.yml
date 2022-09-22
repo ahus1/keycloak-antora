@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+      - assembler
     paths:
       - '.github/workflows/docs-pages.yml'
       - 'antora/**'
@@ -28,10 +29,20 @@ jobs:
       - name: Build docs
         working-directory: antora
         run: ./build.sh
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.0'
+          bundler-cache: true
+          working-directory: antora
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
           path: antora/_site/keycloak-antora
+      - name: Upload Assembler contents
+        uses: actions/upload-artifact@v3
+        with:
+          name: assembler-artifacts
+          path: antora/build
 
   github-pages:
     environment:
