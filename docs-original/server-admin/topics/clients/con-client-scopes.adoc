@@ -8,7 +8,7 @@ Use {project_name} to define a shared client configuration in an entity called a
 
 Client scopes also support the OAuth 2 *scope* parameter. Client applications use this parameter to request claims or roles in the access token, depending on the requirement of the application.
 
-* xref:proc-creating-client-scopes.adoc[]
+include::proc-creating-client-scopes.adoc[]
 
 
 == Protocol
@@ -82,7 +82,7 @@ The scope parameter contains the string, with the scope values divided by spaces
 
 [[_client_scopes_evaluate]]
 == Evaluating Client Scopes
-* xref:proc-evaluating-client-scopes.adoc[]
+include::proc-evaluating-client-scopes.adoc[]
 
 == Client scopes permissions
 
@@ -93,7 +93,7 @@ When a client scope does not have any role scope mappings defined, each user is 
 If a user is not permitted to use the client scope, no protocol mappers or role scope mappings will be used when generating tokens. The client scope will not appear in the _scope_ value in the token.
 
 == Realm default client scopes
-* xref:proc-updating-default-scopes.adoc[]
+include::proc-updating-default-scopes.adoc[]
 
 == Scopes explained
 Client scope::

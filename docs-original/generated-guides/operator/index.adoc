@@ -11,8 +11,8 @@
 
 = Keycloak Operator guide
 
-* xref:installation.adoc[leveloffset=+1]
-* xref:basic-deployment.adoc[leveloffset=+1]
-* xref:realm-import.adoc[leveloffset=+1]
-* xref:advanced-configuration.adoc[leveloffset=+1]
-* xref:customizing-keycloak.adoc[leveloffset=+1]
+include::installation.adoc[leveloffset=+1]
+include::basic-deployment.adoc[leveloffset=+1]
+include::realm-import.adoc[leveloffset=+1]
+include::advanced-configuration.adoc[leveloffset=+1]
+include::customizing-keycloak.adoc[leveloffset=+1]

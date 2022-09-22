@@ -4,7 +4,7 @@
 = OIDC token and SAML assertion mappings
 
 [role="_abstract"]
-Applications receiving ID tokens, access tokens, or SAML assertions may require different roles and user metadata.
+Applications receiving ID tokens, access tokens, or SAML assertions may require different roles and user metadata. 
 
 You can use {project_name} to:
 
@@ -17,7 +17,7 @@ You perform these actions in the *Mappers* tab in the Admin Console.
 .Mappers tab
 image:{project_images}/mappers-oidc.png[]
 
-New clients do not have built-in mappers but they can inherit some mappers from client scopes. See the <<_client_scopes, client scopes section>> for more details.
+New clients do not have built-in mappers but they can inherit some mappers from client scopes. See the <<_client_scopes, client scopes section>> for more details. 
 
 Protocol mappers map items (such as an email address, for example) to
 a specific claim in the identity and access token. The function of a mapper should be self explanatory from its name. You  add pre-configured mappers by clicking *Add Builtin*.
@@ -31,7 +31,7 @@ Details on each option can be viewed by hovering over its tooltip.
 
 You can use most OIDC mappers to control where the claim gets placed. You opt to include or exclude the claim from the _id_ and _access_ tokens by adjusting the *Add to ID token* and *Add to access token* switches.
 
-* xref:proc-creating-mappers.adoc[]
+include::proc-creating-mappers.adoc[]
 
 == Priority order
 

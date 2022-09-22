@@ -51,7 +51,7 @@ Values that go into the configuration file are following the `<key-with-dashes>=
 
 You can easily translate a Key/Value pair from one configuration source to the other.
 
-You will find the relevant configuration options for a specific guide in all three formats on the table at the bottom of each guide. You can find all available options at the xref:all-config.adoc[]
+You will find the relevant configuration options for a specific guide in all three formats on the table at the bottom of each guide. You can find all available options at the link:{links_server_all-config_url}[{links_server_all-config_name}]
  guide.
 
 The configuration source and the corresponding format you should use is use-case specific.
@@ -110,7 +110,7 @@ Keycloak is packed with a CLI that helps you to configure Keycloak. To find out 
 bin/kc.[sh|bat] start --help
 ----
 
-Alternatively, you can find all server options at the xref:all-config.adoc[]
+Alternatively, you can find all server options at the link:{links_server_all-config_url}[{links_server_all-config_name}]
  guide.
 
 === Using raw Quarkus properties
@@ -140,7 +140,7 @@ The development mode is started by invoking the following command:
 
 [source,bash]
 ----
-bin/kc.[sh|bat] start-dev
+bin/kc.[sh|bat] start-dev 
 ----
 
 .Defaults
@@ -170,7 +170,7 @@ The production mode sets the following defaults:
 * Hostname configuration is expected
 * HTTPS/TLS configuration is expected
 
-Make sure to follow the steps outlined in the xref:configuration-production.adoc[]
+Make sure to follow the steps outlined in the link:{links_server_configuration-production_url}[{links_server_configuration-production_name}]
  guide before deploying Keycloak to production environments.
 
 By default, example configuration options for the production mode are commented out in the default `conf/keycloak.conf` file. These give you an idea about the main configuration to consider when running Keycloak in production.
@@ -204,7 +204,7 @@ As you may notice, the command above shows `build options` that should be invoke
 
 For a non-optimized startup of Keycloak, this distinction has no effect, but when a build is invoked beforehand, there's only a subset of Options available to the build command. The reason is, that build options get persisted into Keycloaks classpath, so configuration for e.g. credentials like `db-password` must not get persisted for security reasons.
 
-Build options are marked in the xref:all-config.adoc[]
+Build options are marked in the link:{links_server_all-config_url}[{links_server_all-config_name}]
  guide with a tool icon.
 Find available build options either by looking at the https://www.keycloak.org/server/all-config?f=build[All configuration page with build options selected] or by invoking the following command:
 
@@ -229,7 +229,7 @@ bin/kc.[sh|bat] start --optimized <configuration-options>
 
 The `--optimized` parameter tells Keycloak to assume a pre-built, already optimized Keycloak image is used. As a result, Keycloak avoids checking for and running a build directly at startup to save the time to walk through this process.
 
-You can invoke all configuration options at startup - these are all options in the xref:all-config.adoc[]
+You can invoke all configuration options at startup - these are all options in the link:{links_server_all-config_url}[{links_server_all-config_name}]
  guide that are **not** marked with a tool icon.
 
 If a build option is found at startup with an equal value to the value used when invoking the `build`, it gets silently ignored when using the `--optimized` flag. If it has a different value than the value used when a build was invoked, a warning is shown in the logs and the previously built value is used. In order for this value to take effect, you have to run a new `build` before starting.

@@ -8,7 +8,7 @@ ifeval::[{project_product}==true]
 :tech_feature_name: RecoveryCodes
 :tech_feature_setting: -Dkeycloak.profile.feature.recovery_codes=enabled
 :tech_feature_id: recovery-codes
-* xref:../templates/techpreview.adoc[]
+include::../templates/techpreview.adoc[]
 endif::[]
 
 ifeval::[{project_community}==true]

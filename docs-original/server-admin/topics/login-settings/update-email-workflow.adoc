@@ -12,7 +12,7 @@ ifeval::[{project_product}==true]
 :tech_feature_name: UpdateEmail
 :tech_feature_setting: -Dkeycloak.profile.feature.update_email=enabled
 :tech_feature_id: update-email
-* xref:../templates/techpreview.adoc[]
+include::../templates/techpreview.adoc[]
 endif::[]
 
 ifeval::[{project_community}==true]
