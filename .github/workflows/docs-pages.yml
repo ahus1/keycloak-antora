@@ -36,7 +36,7 @@ jobs:
         run: |
           ./build.sh
           zip antora-assembler.zip build
-          mv asciidoc.zip _site/keycloak-antora
+          mv antora-assembler.zip _site/keycloak-antora
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
