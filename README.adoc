@@ -17,7 +17,7 @@ This should eventually be moved to its own Git repository as it is independent o
 +
 Enabled with antora-assembler which will create one big AsciiDoc file per component in the build folder.
 
-doc-original::
+docs-original::
 The server-guide and operator-guide in the new format, and the admin-guide in the old format.
 Taken as a snapshot from the current development branch.
 For the guides, the freemarker templating has been completed.
@@ -26,7 +26,7 @@ doc::
 Documentation re-organized documentation from above put into the Antora folder structure.
 The update of internal references is complete for all guides.
 
-To see what has changed, compare the files in the two folders `doc` and `doc-original`.
+To see what has changed, compare the files in the two folders `doc` and `docs-original`.
 
 == Concepts and Questions
 
