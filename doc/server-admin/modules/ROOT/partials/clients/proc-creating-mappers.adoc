@@ -1,4 +1,4 @@
-[id="proc-creating-mappers_{context}"]
+[id="proc-creating-mappers"]
 
 [role="_abstract"]
 You can add mapper types as follows:

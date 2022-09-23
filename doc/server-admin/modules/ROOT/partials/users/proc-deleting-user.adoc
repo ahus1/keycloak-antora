@@ -2,7 +2,7 @@
 //
 // server_admin/topics/users.adoc
 
-[id="proc-deleting-user_{context}"]
+[id="proc-deleting-user"]
 = Deleting a user
 
 You can delete a user, who no longer needs access to applications. If a user is deleted, the user profile and data is also deleted.

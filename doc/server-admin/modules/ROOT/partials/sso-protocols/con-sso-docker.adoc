@@ -1,4 +1,4 @@
-[id="con-sso-docker_{context}"]
+[id="con-sso-docker"]
 
 [[_docker]]
 

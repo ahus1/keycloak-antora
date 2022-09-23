@@ -1,4 +1,4 @@
-//[id="con-client-scopes_{context}"]//
+//[id="con-client-scopes"]//
 
 [[_client_scopes]]
 = Client scopes

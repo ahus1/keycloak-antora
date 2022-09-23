@@ -2,7 +2,7 @@
 //
 // server_admin/topics/users.adoc
 
-[id="proc-enabling-recaptcha_{context}"]
+[id="proc-enabling-recaptcha"]
 = Enabling reCAPTCHA
 
 [role="_abstract"]

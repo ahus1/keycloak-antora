@@ -1,5 +1,5 @@
 
-[id="con-oidc-auth-flows_{context}"]
+[id="con-oidc-auth-flows"]
 ==== OIDC auth flows
 [role="_abstract"]
 OIDC has several methods, or flows, that clients or applications can use to authenticate users and receive _identity_ and _access_ tokens.  The method depends on the type of application or client requesting access.
@@ -20,12 +20,12 @@ to exchange the code for an _identity_ and _access_ and _refresh_ token.  To pre
 
 [NOTE]
 ====
-A system is vulnerable to a stolen token for the lifetime of that token. For security and scalability reasons, access tokens are generally set to expire quickly so subsequent token requests fail. If a token expires, an application can obtain a new access token using the additional _refresh_ token sent by the login protocol. 
+A system is vulnerable to a stolen token for the lifetime of that token. For security and scalability reasons, access tokens are generally set to expire quickly so subsequent token requests fail. If a token expires, an application can obtain a new access token using the additional _refresh_ token sent by the login protocol.
 ====
 
 [[_confidential-clients]]
 _Confidential_ clients provide client secrets when they exchange the temporary codes for tokens. _Public_ clients are not required to provide client secrets.
-_Public_ clients are secure when HTTPS is strictly enforced and redirect URIs registered for the client are strictly controlled.  HTML5/JavaScript clients have to be _public_ clients because there is no way to securely transmit the client secret to HTML5/JavaScript clients. For more details, see the xref:assembly-managing-clients_{context}[Managing Clients] chapter.
+_Public_ clients are secure when HTTPS is strictly enforced and redirect URIs registered for the client are strictly controlled.  HTML5/JavaScript clients have to be _public_ clients because there is no way to securely transmit the client secret to HTML5/JavaScript clients. For more details, see the xref:assembly-managing-clients[Managing Clients] chapter.
 
 {project_name} also supports the https://datatracker.ietf.org/doc/html/rfc7636[Proof Key for Code Exchange] specification.
 
@@ -33,13 +33,13 @@ _Public_ clients are secure when HTTPS is strictly enforced and redirect URIs re
 
 ===== Implicit Flow
 
-The Implicit Flow is a browser-based protocol. It is similar to the Authorization Code Flow but with fewer requests and no refresh tokens. 
+The Implicit Flow is a browser-based protocol. It is similar to the Authorization Code Flow but with fewer requests and no refresh tokens.
 
 [NOTE]
 ====
 The possibility exists of _access_ tokens leaking in the browser history when tokens are transmitted via redirect URIs (see below).
 
-Also, this flow does not provide clients with refresh tokens. Therefore, access tokens have to be long-lived or users  have to re-authenticate when they expire.  
+Also, this flow does not provide clients with refresh tokens. Therefore, access tokens have to be long-lived or users  have to re-authenticate when they expire.
 
 We do not advise using this flow. This flow is supported because it is in the OIDC and OAuth 2.0 specification.
 ====
@@ -86,7 +86,7 @@ This is used by clients running on internet-connected devices that have limited 
 This feature is used by clients who want to initiate the authentication flow by communicating with the OpenID Provider directly without redirect through the user's browser like OAuth 2.0's authorization code grant. Here's a brief summary of the protocol:
 
 . The client requests {project_name} an auth_req_id that identifies the authentication request made by the client. {project_name} creates the auth_req_id.
-. After receiving this auth_req_id, this client repeatedly needs to poll {project_name} to obtain an Access Token, Refresh Token and ID Token from {project_name} in return for the auth_req_id until the user is authenticated. 
+. After receiving this auth_req_id, this client repeatedly needs to poll {project_name} to obtain an Access Token, Refresh Token and ID Token from {project_name} in return for the auth_req_id until the user is authenticated.
 
 An administrator can configure Client Initiated Backchannel Authentication (CIBA) related operations as `CIBA Policy` per realm.
 
@@ -156,10 +156,10 @@ Authentication Channel Provider is provided as SPI provider so that users of {pr
 
 If a user of {project_name} user want to use the HTTP Authentication Channel Provider, they need to know its contract between {project_name} and the authentication entity consisting of the following two parts.
 
-Authentication Delegation Request/Response:: 
+Authentication Delegation Request/Response::
 {project_name} sends an authentication request to the authentication entity.
 
-Authentication Result Notification/ACK:: 
+Authentication Result Notification/ACK::
 The authentication entity notifies the result of the authentication to {project_name}.
 
 Authentication Delegation Request/Response consists of the following messaging.
@@ -342,7 +342,7 @@ using the <<_back-channel-logout-url, Back-Channel Logout URL>>. If not defined,
 
 ===== Backchannel Logout
 
-This is a non browser-based logout that uses direct backchannel communication between {project_name} and clients. 
+This is a non browser-based logout that uses direct backchannel communication between {project_name} and clients.
 {project_name} sends a HTTP POST request containing a logout token to all clients logged into {project_name}. These
 requests are sent to a registered backchannel logout URLs at {project_name} and are supposed to trigger a logout at client side.
 

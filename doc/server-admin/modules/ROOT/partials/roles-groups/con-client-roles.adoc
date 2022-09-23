@@ -1,4 +1,4 @@
-[id="con-client-roles_{context}"]
+[id="con-client-roles"]
 
 = Client roles
 [role="_abstract"]

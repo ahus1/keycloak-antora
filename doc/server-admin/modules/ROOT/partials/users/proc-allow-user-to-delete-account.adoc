@@ -1,4 +1,4 @@
-[id="proc-allow-user-to-delete-account_{context}"]
+[id="proc-allow-user-to-delete-account"]
 = Enabling account deletion by users
 
 End users and applications can delete their accounts in the Account Console if you enable this capability in the Admin Console. Once you enable this capability, you can give that capability to specific users.

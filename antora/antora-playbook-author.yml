@@ -64,7 +64,6 @@ asciidoc:
     project_versionLinks: latest
     project_dirref: KEYCLOAK_HOME
     project_openshift_product_name: Keycloak for OpenShift
-    context: '{page-component-name}'
     kc_realms_path: /realms
     kc_admins_path: /admin
     kc_js_path: /js

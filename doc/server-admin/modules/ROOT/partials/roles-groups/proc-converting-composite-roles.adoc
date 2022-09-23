@@ -1,4 +1,4 @@
-[id="proc-converting-composite-roles_{context}"]
+[id="proc-converting-composite-roles"]
 
 [[_composite-roles]]
 

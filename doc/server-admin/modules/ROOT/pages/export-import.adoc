@@ -1,10 +1,10 @@
 
-[id=assembly-exporting-importing_{context}]
+[id=assembly-exporting-importing]
 == Importing and exporting the database
 [role="_abstract"]
-{project_name} includes the ability to export and import its entire database. 
+{project_name} includes the ability to export and import its entire database.
 
-You can migrate the whole {project_name} database from one environment to another or migrate to another database. The export/import triggers at server boot time, and its parameters pass through Java properties. 
+You can migrate the whole {project_name} database from one environment to another or migrate to another database. The export/import triggers at server boot time, and its parameters pass through Java properties.
 
 [NOTE]
 ====
@@ -25,9 +25,9 @@ If you export to a directory, you can specify the number of users stored in each
 
 [NOTE]
 ====
-Exporting into single files can produce large files, so if your database contains more than 500 users, export to a directory and not a single file. Exporting many users into a directory performs optimally as the directory provider uses a separate transaction for each "page" (a file of users). 
+Exporting into single files can produce large files, so if your database contains more than 500 users, export to a directory and not a single file. Exporting many users into a directory performs optimally as the directory provider uses a separate transaction for each "page" (a file of users).
 
-The default count of users per file and per transaction is fifty, but you can override this number. See <<_keycloak-migration-usersPerFile, keycloak.migration.usersPerFile>> for more information. 
+The default count of users per file and per transaction is fifty, but you can override this number. See <<_keycloak-migration-usersPerFile, keycloak.migration.usersPerFile>> for more information.
 
 Exporting to or importing from a single file uses one transaction, which can impair performance if the database contains many users.
 ====
@@ -90,7 +90,7 @@ Examples:
 * -Dkeycloak.import=/tmp/realm1.json,/tmp/realm2.json
 
 [NOTE]
-==== 
+====
 You cannot use the `keycloak.import` parameter with `keycloak.migration.X` parameters. If you use these parameters together, {project_name} ignores the `keycloak.import` parameter. The `keycloak.import` mechanism ignores the realms which already exist in {project_name}. The `keycloak.import` mechanism is convenient for development purposes, but if more flexibility is needed, use the `keycloak.migration.X` parameters.
 ====
 

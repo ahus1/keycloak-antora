@@ -2,16 +2,16 @@
 //
 // con-required-actions.adoc
 
-[id="proc-enabling-terms-conditions_{context}"]
+[id="proc-enabling-terms-conditions"]
 = Enabling terms and conditions as a required action
 
-You can enable a required action that new users must accept the terms and conditions before logging in to {project_name} for the first time.    
+You can enable a required action that new users must accept the terms and conditions before logging in to {project_name} for the first time.
 
 .Procedure
 . Click *Authentication* in the menu.
 . Click the *Required Actions* tab.
 . Enable the *Terms and Conditions* action.
-. Edit the `terms.ftl` file in the base login theme.  
+. Edit the `terms.ftl` file in the base login theme.
 
 .Additional resources
-* For more information on extending and creating themes, see the link:{developerguide_link}[{developerguide_name}]. 
+* For more information on extending and creating themes, see the link:{developerguide_link}[{developerguide_name}].

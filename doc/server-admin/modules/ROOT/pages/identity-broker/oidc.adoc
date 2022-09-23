@@ -2,7 +2,7 @@
 [[_identity_broker_oidc]]
 = OpenID Connect v1.0 identity providers
 
-{project_name} brokers identity providers based on the OpenID Connect protocol. These identity providers (IDPs) must support the xref:sso-protocols.adoc#con-oidc-auth-flows_{context}[Authorization Code Flow] defined in the specification to authenticate users and authorize access.
+{project_name} brokers identity providers based on the OpenID Connect protocol. These identity providers (IDPs) must support the xref:sso-protocols.adoc#con-oidc-auth-flows[Authorization Code Flow] defined in the specification to authenticate users and authorize access.
 
 
 .Procedure
@@ -12,7 +12,7 @@
 .Add identity provider
 image:oidc-add-identity-provider.png[Add Identity Provider]
 +
-. Enter your initial configuration options. See <<_general-idp-config, General IDP Configuration>> for more information about configuration options.
+. Enter your initial configuration options. See xref:identity-broker/configuration.adoc[General IDP Configuration] for more information about configuration options.
 +
 .OpenID connect config
 |===
@@ -40,7 +40,7 @@ image:oidc-add-identity-provider.png[Add Identity Provider]
 |A realm acting as an OIDC client to the external IDP. The realm must have an OIDC client ID if you use the Authorization Code Flow to interact with the external IDP.
 
 |Client Secret
-|Client secret from an external <<_vault-administration,vault>>. This secret is necessary if you are using the Authorization Code Flow.
+|Client secret from an external xref:vault.adoc[vault]. This secret is necessary if you are using the Authorization Code Flow.
 
 |Client Assertion Signature Algorithm
 |Signature algorithm to create JWT assertion as client authentication.
@@ -63,7 +63,7 @@ If the user is unauthenticated in the IDP, the client still receives a `login_re
 |Validate Signatures
 |Specifies if {project_name} verifies signatures on the external ID Token signed by this IDP. If *ON*, {project_name} must know the public key of the external OIDC IDP. For performance purposes, {project_name} caches the public key of the external OIDC identity provider.
 ifeval::[{project_product}==true]
-If your identity provider's private key is compromised, update your keys and clear the keys cache. See <<_clear-cache, Clearing the cache>> for more details.
+If your identity provider's private key is compromised, update your keys and clear the keys cache. See xref:admin-console.adoc#_clear-cache[Clearing the cache] for more details.
 endif::[]
 
 |Use JWKS URL

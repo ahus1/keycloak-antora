@@ -1,5 +1,4 @@
-[[_ssl_modes]]
-
+[#_ssl_modes]
 = Configuring SSL for a realm
 
 Each realm has an associated SSL Mode, which defines the SSL/HTTPS requirements for interacting with the realm.

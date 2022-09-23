@@ -1,4 +1,4 @@
-[id="proc-creating-oidc-client_{context}"]
+[id="proc-creating-oidc-client"]
 = Creating an OpenID Connect client
 
 [role="_abstract"]
@@ -21,5 +21,5 @@ If you plan to localize this name, set up a replacement string value. For exampl
 
 . Click *Save*.
 
-This action creates the client and bring you to the *Settings* tab, where you can perform xref:con-basic-settings_{context}[Basic configuration].
+This action creates the client and bring you to the *Settings* tab, where you can perform xref:con-basic-settings[Basic configuration].
 

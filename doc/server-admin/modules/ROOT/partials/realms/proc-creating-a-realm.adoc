@@ -1,5 +1,5 @@
 
-[id=proc-creating-a-realm_{context}]
+[id=proc-creating-a-realm]
 = Creating a realm
 
 [role="_abstract"]

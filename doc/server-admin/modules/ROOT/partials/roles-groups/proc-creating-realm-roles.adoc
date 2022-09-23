@@ -1,4 +1,4 @@
-[id="proc-creating-realm-roles_{context}"]
+[id="proc-creating-realm-roles"]
 
 = Creating a realm role
 [role="_abstract"]

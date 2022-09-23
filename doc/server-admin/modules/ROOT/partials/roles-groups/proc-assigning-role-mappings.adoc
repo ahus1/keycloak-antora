@@ -1,4 +1,4 @@
-[id="proc-assigning-role-mappings_{context}"]
+[id="proc-assigning-role-mappings"]
 
 = Assigning role mappings
 [role="_abstract"]

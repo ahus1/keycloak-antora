@@ -2,7 +2,7 @@
 //
 // server_admin/topics/users.adoc
 
-[id="proc-configuring-user-attributes_{context}"]
+[id="proc-configuring-user-attributes"]
 = Configuring user attributes
 
 User attributes provide a customized experience for each user. You can create a personalized identity for each user in the console by configuring user attributes.

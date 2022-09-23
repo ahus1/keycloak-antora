@@ -18,4 +18,4 @@ endif::[]
 
 If {project_name} does not find the configured default identity provider, the login form is displayed.
 
-This authenticator is responsible for processing the `kc_idp_hint` query parameter. See the <<_client_suggested_idp, client suggested identity provider>> section for more information.
+This authenticator is responsible for processing the `kc_idp_hint` query parameter. See the xref:identity-broker/suggested.adoc[client suggested identity provider] section for more information.

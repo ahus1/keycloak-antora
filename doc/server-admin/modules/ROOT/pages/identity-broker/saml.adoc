@@ -10,7 +10,7 @@
 .Add identity provider
 image:saml-add-identity-provider.png[Add Identity Provider]
 +
-. Enter your initial configuration options. See <<_general-idp-config, General IDP Configuration>> for more information about configuration options.
+. Enter your initial configuration options. See xref:identity-broker/configuration.adoc#_general-idp-config[General IDP Configuration] for more information about configuration options.
 .SAML Config
 |===
 |Configuration|Description

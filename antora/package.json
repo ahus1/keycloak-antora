@@ -12,7 +12,7 @@
   "devDependencies": {
     "@antora/cli": "^3.1.1",
     "@antora/lunr-extension": "^1.0.0-alpha.8",
-    "@antora/pdf-extension": "git+https://gitlab.com/antora/antora-assembler.git#ee1c1ad71563583bfeb27b8ca386f18f2f3bb5fc",
+    "@antora/pdf-extension": "^1.0.0-alpha.6",
     "@antora/site-generator": "^3.1.1",
     "asciidoctor-highlight.js": "^0.4.0",
     "asciidoctor-kroki": "^0.16.0",

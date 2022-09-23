@@ -1,4 +1,4 @@
-[id="con-saml-bindings_{context}"]
+[id="con-saml-bindings"]
 
 ==== SAML bindings
 [role="_abstract"]

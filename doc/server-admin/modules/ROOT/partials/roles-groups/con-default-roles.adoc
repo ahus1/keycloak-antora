@@ -1,4 +1,4 @@
-[id="con-default-roles_{context}"]
+[id="con-default-roles"]
 
 [[_default_roles]]
 ==== Default roles

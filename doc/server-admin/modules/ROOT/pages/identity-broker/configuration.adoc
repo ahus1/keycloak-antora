@@ -70,5 +70,5 @@ Although each type of identity provider has its configuration options, all share
 |The authentication flow {project_name} triggers when a user finishes logging in with the external identity provider.
 
 |Sync Mode
-|Strategy to update user information from the identity provider through mappers. When choosing *legacy*, {project_name} used the current behavior. *Import* does not update user data and *force* updates user data when possible. See <<_mappers, Identity Provider Mappers>> for more information.
+|Strategy to update user information from the identity provider through mappers. When choosing *legacy*, {project_name} used the current behavior. *Import* does not update user data and *force* updates user data when possible. See xref:identity-broker/mappers.adoc[Identity Provider Mappers] for more information.
 |===

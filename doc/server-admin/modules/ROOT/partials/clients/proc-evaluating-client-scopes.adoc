@@ -1,4 +1,4 @@
-[id="proc_evaluating_client_scopes_{context}"]
+[id="proc_evaluating_client_scopes"]
 
 [role="_abstract"]
 The *Mappers* tab contains the protocol mappers and the *Scope* tab contains the role scope mappings declared for this client. They do not contain the mappers and scope mappings inherited from client scopes. It is possible to see the effective protocol mappers (that is the protocol mappers defined on the client itself as well as inherited from the linked client scopes) and the effective role scope mappings used when generating a token for a client.

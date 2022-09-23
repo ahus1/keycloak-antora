@@ -2,13 +2,11 @@
 
 == What to see here
 
-* How the existing docs of the new Quarkus guides and classic guides can be migrated to Antora
+* How the existing docs of the new Quarkus guides and classic guides can be migrated to Antora.
 
-* How a minimal Antora site could look like
+* How a minimal Antora site could look like.
 
 * How Antora Assembler can create a single AsciiDoc file that can then be processed downstream; as a placeholder Asciidoctor PDF creates a PDF from the source.
-+
-This uses a snapshot release of Antora Assembler as only this supports the include with leveloffset.
 
 == Content of the repository
 
@@ -25,9 +23,10 @@ Taken as a snapshot from the current development branch.
 For the guides, the freemarker templating has been completed.
 
 doc::
-Documentation re-organized documentation from above put into the Antora folder structure. The update of internal references is complete for the new guides, and incomplete for the old admin guide.
-+
-To see what has changed, compare the files in the two folders.
+Documentation re-organized documentation from above put into the Antora folder structure.
+The update of internal references is complete for all guides.
+
+To see what has changed, compare the files in the two folders `doc` and `doc-original`.
 
 == Concepts and Questions
 
@@ -59,6 +58,63 @@ Concept:
 Question:
 
 * Decide which includes should be converted to pages, and which should be moved to partials.
+
+Concept:
+
+* Antora assembler will adjust all ``++xref:[]++``s within a component.
+Those to other components are not adjusted, and will also not show the page title.
+
+Question:
+
+* Can this be post-processed in the resulting AsciiDoc file, and can linting ensure this in the writing phase?
+
+Concept:
+
+* Antora assembler assigns an ID to each page before adding it to the document, and uses this in ``++xref:[]++``s in the document.
+It also applies this to any partial that is being included.
+
+Question:
+
+* This conflicts when a page contains already an ID with the topmost heading (like `++[id="proc-registering-new-user_{context}"]++`) and Antora will then have both in the result (`[#assembly-managing-users:::proc-registering-new-user,id=proc-registering-new-user]`).
+The second ID is then ignored when rendering the result in Asciidoctor, and this doesn't cause any ripple effects.
++
+Suggestion: Change to the ID type of `[#xxx]`.
+Assembler will then replace the reference with a new reference.
+A short test showed that attributes in references don't work well.
+In the case given above, the reference should be changed to `[#proc-registering-new-user]`.
++
+In general, those IDs should only be added when referenced somewhere else.
+The references already contain the file name for the parents, the file name of the include and the name of the component, so they can be assumed to be unique and stable as a change of the heading will not change the reference in the generated HTML when uses would bookmark it.
+A `++{context}++` adds complexity and no additional value.
+
+* Assembler doesn't support having a custom ID in headings in the target file.
+If that would be necessary, post-processing would be necessary.
+This would make the process more fragile, so I currently won't recommend it.
+
+Concept:
+
+* An IDE like IntelliJ can list to an Author where a partial is being used.
+
+Suggestion:
+
+* Comments like `Module included in the following assemblies:` are then obsolete and should be removed.
+This information is available via the IDE, and tends to be outdated soon when put in a comment.
+
+Concept:
+
+* Assembler passes all attributes from the Antora component descriptor and playbook to the command line of the PDF generation.
+
+Suggestion:
+
+* By wrapping the command, the attributes can be saved into a separate file for the downstream process.
+
+Observation:
+
+* The PDF generation is quite slow.
+
+Suggestion:
+
+* The creation of the AsciiDoc content is fast, and for the downstream docs the PDF generation should be disabled.
 
 == Todos for a real site
 

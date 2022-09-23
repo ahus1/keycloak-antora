@@ -1,4 +1,4 @@
-[id="con-advanced-settings_{context}"]
+[id="con-advanced-settings"]
 = Advanced configuration
 [role="_abstract"]
 

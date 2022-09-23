@@ -1,4 +1,4 @@
-[id="proc-specifying-default-groups_{context}"]
+[id="proc-specifying-default-groups"]
 
 = Using default groups
 [role="_abstract"]

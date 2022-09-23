@@ -1,5 +1,5 @@
 
-[id="webauthn_{context}"]
+[id="webauthn"]
 = W3C Web Authentication (WebAuthn)
 
 {project_name} provides support for https://www.w3.org/TR/webauthn/[W3C Web Authentication (WebAuthn)]. {project_name} works as a WebAuthn's https://www.w3.org/TR/webauthn/#webauthn-relying-party[Relying Party (RP)].
@@ -93,7 +93,7 @@ After registering a WebAuthn authenticator, the user carries out the following o
 
 === Managing credentials
 
-{project_name} manages WebAuthn credentials similarly to other credentials from xref:assembly-managing-users.adoc#ref-user-credentials_{context}[User credential management]:
+{project_name} manages WebAuthn credentials similarly to other credentials from xref:assembly-managing-users.adoc#ref-user-credentials[User credential management]:
 
 * {project_name} assigns users a required action to create a WebAuthn credential from the *Reset Actions* list and select *Webauthn Register*.
 * Administrators can delete a WebAuthn credential by clicking *Delete*.

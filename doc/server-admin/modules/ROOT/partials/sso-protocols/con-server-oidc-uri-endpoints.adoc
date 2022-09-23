@@ -1,4 +1,4 @@
-[id="con-server-oidc-uri-endpoints_{context}"]
+[id="con-server-oidc-uri-endpoints"]
 
 ====  {project_name} server OIDC URI endpoints
 [role="_abstract"]

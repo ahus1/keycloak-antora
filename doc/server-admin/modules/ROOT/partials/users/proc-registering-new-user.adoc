@@ -2,7 +2,7 @@
 //
 // con-user-registration.adoc
 
-[id="proc-registering-new-user_{context}"]
+[id=proc-registering-new-user]
 = Registering as a new user
 
 [role="_abstract"]

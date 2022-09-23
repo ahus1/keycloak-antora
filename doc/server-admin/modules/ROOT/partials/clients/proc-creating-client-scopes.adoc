@@ -1,4 +1,4 @@
-[id="proc_creating_client_scopes_{context}"]
+[id="proc_creating_client_scopes"]
 
 [role="_abstract"]
 To create a client scope, follow these steps:

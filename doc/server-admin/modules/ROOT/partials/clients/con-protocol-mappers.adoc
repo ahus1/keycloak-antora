@@ -1,4 +1,4 @@
-[id="con-protocol-mappers_{context}"]
+[id="con-protocol-mappers"]
 [[_protocol-mappers]]
 
 = OIDC token and SAML assertion mappings

@@ -43,7 +43,7 @@ When you attempt to change the non-LDAP mapped user data, the user update is not
 
 == Edit mode
 
-Users and admins can modify user metadata, users through the <<_account-service, Account Console>>, and administrators through the Admin Console. The `Edit Mode` configuration on the LDAP configuration page defines the user's LDAP update privileges.
+Users and admins can modify user metadata, users through the xref:account.adoc[Account Console], and administrators through the Admin Console. The `Edit Mode` configuration on the LDAP configuration page defines the user's LDAP update privileges.
 
 READONLY::
 You cannot change the username, email, first name, last name, and other mapped attributes. {project_name} shows an error anytime a user attempts to update these fields. Password updates are not supported.
@@ -71,7 +71,7 @@ Sync Registrations::
 Toggle this switch to *ON* if you want new users created by {project_name} added to LDAP.
 
 Allow Kerberos authentication::
-Enable Kerberos/SPNEGO authentication in the realm with user data provisioned from LDAP. For more information, see the <<_kerberos,Kerberos section>>.
+Enable Kerberos/SPNEGO authentication in the realm with user data provisioned from LDAP. For more information, see the xref:authentication/kerberos.adoc[Kerberos section].
 
 Other options::
 Hover the mouse pointer over the tooltips in the Admin Console to see more details about these options.

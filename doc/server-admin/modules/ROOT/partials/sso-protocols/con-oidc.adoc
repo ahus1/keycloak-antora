@@ -1,4 +1,4 @@
-[id="con-oidc_{context}"]
+[id="con-oidc"]
 
 === OpenID Connect
 [role="_abstract"]

@@ -9,4 +9,4 @@ identity_provider::
 identity_provider_identity::
   The IDP username of the currently authenticated user. Often, but not always, the same as the {project_name} username. For example, {project_name} can link a user john` to a Facebook user `john123@gmail.com`. In that case, the value of the user session note is `john123@gmail.com`.
 
-You can use a <<_protocol-mappers, Protocol Mapper>> of type `User Session Note` to propagate this information to your clients.
+You can use a xref:assembly-managing-clients.adoc#_protocol-mappers[Protocol Mapper] of type `User Session Note` to propagate this information to your clients.

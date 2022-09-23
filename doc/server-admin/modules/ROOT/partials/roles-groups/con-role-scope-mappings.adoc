@@ -1,4 +1,4 @@
-[id="con-role-scope-mappings_{context}"]
+[id="con-role-scope-mappings"]
 
 [[_role_scope_mappings]]
 

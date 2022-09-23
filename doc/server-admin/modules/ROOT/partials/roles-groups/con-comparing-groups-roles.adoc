@@ -1,4 +1,4 @@
-[id="con-comparing-groups-roles_{context}"]
+[id="con-comparing-groups-roles"]
 
 = Groups compared to roles
 [role="_abstract"]
@@ -6,4 +6,4 @@ Groups and roles have some similarities and differences. In {project_name}, grou
 
 <<_composite-roles,Composite Roles>> are similar to Groups as they provide the same functionality. The difference between them is conceptual. Composite roles apply the permission model to a set of services and applications. Use composite roles to manage applications and services.
 
-Groups focus on collections of users and their roles in an organization. Use groups to manage users.  
+Groups focus on collections of users and their roles in an organization. Use groups to manage users.
