@@ -11,6 +11,17 @@
     "@antora/user-require-helper" "~2.0"
     "@asciidoctor/core" "~2.2"
 
+"@antora/assembler@1.0.0-alpha.6":
+  version "1.0.0-alpha.6"
+  resolved "https://registry.yarnpkg.com/@antora/assembler/-/assembler-1.0.0-alpha.6.tgz#d043da13f9dcfe8435aab304c7030f3a180a4fdc"
+  integrity sha512-Gb8aEtVjdo4d5Dq+xm5yb+tFOUUtfSM+81wERt/t1pykRDtPcnAH1d7imNspVXiVMSA9rRvsmy38svLZgq/O4A==
+  dependencies:
+    "@antora/expand-path-helper" "~2.0"
+    braces "~3.0"
+    js-yaml "~4.1"
+    picomatch "~2.3"
+    vinyl "~2.2"
+
 "@antora/cli@^3.1.1":
   version "3.1.1"
   resolved "https://registry.yarnpkg.com/@antora/cli/-/cli-3.1.1.tgz#5287611415306addfab300756d633946b35a409a"
@@ -111,11 +122,12 @@
     handlebars "~4.7"
     require-from-string "~2.0"
 
-"@antora/pdf-extension@1.0.0-alpha.5", "@antora/pdf-extension@git+https://gitlab.com/antora/antora-assembler.git#ee1c1ad71563583bfeb27b8ca386f18f2f3bb5fc":
-  version "1.0.0-alpha.5"
-  resolved "git+https://gitlab.com/antora/antora-assembler.git#ee1c1ad71563583bfeb27b8ca386f18f2f3bb5fc"
+"@antora/pdf-extension@^1.0.0-alpha.6":
+  version "1.0.0-alpha.6"
+  resolved "https://registry.yarnpkg.com/@antora/pdf-extension/-/pdf-extension-1.0.0-alpha.6.tgz#e60d9b014b0c355a835195cc891254eeb6b32232"
+  integrity sha512-oJ7zcYLF8oavEhZ7zgEZxHiNTdt8YmPNoKnPQ2ylGHdx/zFFLy9AZyEoTULs2S5lbx+0Z53Z23q3Gkp86f8EcQ==
   dependencies:
-    "@antora/pdf-extension" "1.0.0-alpha.5"
+    "@antora/assembler" "1.0.0-alpha.6"
 
 "@antora/playbook-builder@3.1.1":
   version "3.1.1"
