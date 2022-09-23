@@ -116,6 +116,14 @@ Suggestion:
 
 * The creation of the AsciiDoc content is fast, and for the downstream docs the PDF generation should be disabled.
 
+Concept:
+
+* The file name of a page is also the end of a URL in Antora
+
+Suggestion:
+
+* The pages should not contain a modular writing prefix like `assembly_`.
+
 == Todos for a real site
 
 * Consider Algolia for a hosted search service instead of client-side JavaScript search, as the index would overwise grow too big.
