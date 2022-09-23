@@ -33,16 +33,14 @@ jobs:
           working-directory: antora
       - name: Build docs
         working-directory: antora
-        run: ./build.sh
+        run: |
+          ./build.sh
+          zip antora-assembler.zip build
+          mv asciidoc.zip _site/keycloak-antora
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
           path: antora/_site/keycloak-antora
-      - name: Upload Assembler contents
-        uses: actions/upload-artifact@v3
-        with:
-          name: assembler-artifacts
-          path: antora/build
 
   github-pages:
     environment:
