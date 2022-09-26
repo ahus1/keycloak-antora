@@ -4,7 +4,7 @@ on:
   push:
     branches:
       - main
-      - assembler
+      - npm
     paths:
       - '.github/workflows/docs-pages.yml'
       - 'antora/**'
@@ -24,8 +24,8 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: '16.x'
-          cache: 'yarn'
-          cache-dependency-path: 'antora/yarn.lock'
+          cache: 'npm'
+          cache-dependency-path: 'antora/package-lock.json'
       - uses: ruby/setup-ruby@v1
         with:
           ruby-version: '3.0'

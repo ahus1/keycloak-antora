@@ -1,7 +1,7 @@
 {
-  "name": "intellij-asciidoc-plugin-docs",
+  "name": "keycloak-antora",
   "version": "1.0.0",
-  "description": "IntelliJ AsciiDoc Plugin Documentation",
+  "description": "Keycloak Antora Proof-of-Concept",
   "author": "Alexander Schwartz",
   "private": true,
   "scripts": {

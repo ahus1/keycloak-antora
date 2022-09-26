@@ -1,3 +1,3 @@
 #!/bin/bash -e
-yarn install
-yarn run author
+npm install
+npm run author
