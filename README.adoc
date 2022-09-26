@@ -7,6 +7,8 @@
 * How a minimal Antora site could look like.
 
 * How Antora Assembler can create a single AsciiDoc file that can then be processed downstream; as a placeholder Asciidoctor PDF creates a PDF from the source.
++
+https://ahus1.github.io/keycloak-antora/[Download the single AsciiDoc source and the PDF created by Antora Assembler from the start page].
 
 == Content of the repository
 
