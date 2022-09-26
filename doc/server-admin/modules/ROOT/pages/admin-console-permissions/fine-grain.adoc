@@ -1,5 +1,3 @@
-[[_fine_grain_permissions]]
-
 = Fine grain admin permissions
 
 :tech_feature_name: Fine Grain Admin Permissions

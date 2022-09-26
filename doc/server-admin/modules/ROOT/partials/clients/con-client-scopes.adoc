@@ -4,7 +4,7 @@
 = Client scopes
 
 [role="_abstract"]
-Use {project_name} to define a shared client configuration in an entity called a _client scope_. A _client scope_ configures <<_protocol-mappers, protocol mappers>> and <<_role_scope_mappings, role scope mappings>> for multiple clients.
+Use {project_name} to define a shared client configuration in an entity called a _client scope_. A _client scope_ configures <<_protocol-mappers, protocol mappers>> and xref:assembly-roles-groups.adoc#_role_scope_mappings[role scope mappings] for multiple clients.
 
 Client scopes also support the OAuth 2 *scope* parameter. Client applications use this parameter to request claims or roles in the access token, depending on the requirement of the application.
 
@@ -33,7 +33,7 @@ This scope handles claims defined in the https://wiki.eclipse.org/MicroProfile/J
 +
 ** *offline_access*
 +
-This scope is used in cases when clients need to obtain offline tokens. More details on offline tokens is available in the  <<_offline-access, Offline Access section>> and in the https://openid.net/specs/openid-connect-core-1_0.html#OfflineAccess[OpenID Connect specification].
+This scope is used in cases when clients need to obtain offline tokens. More details on offline tokens is available in the  xref:sessions/offline.adoc#_offline-access[Offline Access section] and in the https://openid.net/specs/openid-connect-core-1_0.html#OfflineAccess[OpenID Connect specification].
 +
 ** *profile*
 ** *email*
@@ -100,7 +100,7 @@ Client scope::
 Client scopes are entities in {project_name} that are configured at the realm level and can be linked to clients. Client scopes are referenced by their name when a request is sent to the {project_name} authorization endpoint with a corresponding value of the *scope* parameter. See the <<_client_scopes_linking, client scopes linking>> section for more details.
 
 Role scope mapping::
-This is available under the *Scope* tab of a client or client scope. Use *Role scope mapping* to limit the roles that can be used in the access tokens. See the <<_role_scope_mappings, Role Scope Mappings section>> for more details.
+This is available under the *Scope* tab of a client or client scope. Use *Role scope mapping* to limit the roles that can be used in the access tokens. See the xref:assembly-roles-groups.adoc#_role_scope_mappings[Role Scope Mappings section] for more details.
 
 ifeval::[{project_community}==true]
 

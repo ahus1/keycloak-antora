@@ -1,8 +1,8 @@
 [id="con-advanced-settings"]
 = Advanced configuration
-[role="_abstract"]
 
-After completing the fields on the *Settings* tab, you can use the other tabs to perform advanced configuration.  For example, you can use the *Permissions* and *Roles* tabs to configure fine-grained authentication for administrators. See <<_fine_grain_permissions, Fine grain admin permissions>>.  Also, see the remaining sections in this chapter for other capabilities.
+[role="_abstract"]
+After completing the fields on the *Settings* tab, you can use the other tabs to perform advanced configuration.  For example, you can use the *Permissions* and *Roles* tabs to configure fine-grained authentication for administrators. See xref:admin-console-permissions/fine-grain.adoc[Fine grain admin permissions].  Also, see the remaining sections in this chapter for other capabilities.
 
 == Advanced tab
 
@@ -112,7 +112,7 @@ See https://datatracker.ietf.org/doc/html/rfc7636[RFC 7636 Proof Key for Code Ex
 *ACR to Level of Authentication (LoA) Mapping*
 
 In the advanced settings of a client, you can define which `Authentication Context Class Reference (ACR)` value is mapped to which `Level of Authentication (LoA)`.
-This mapping can be specified also at the realm as mentioned in the <<_mapping-acr-to-loa-realm,ACR to LoA Mapping>>. A best practice is to configure this mapping at the
+This mapping can be specified also at the realm as mentioned in the xref:admin-console.adoc#_mapping-acr-to-loa-realm,ACR to LoA Mapping]. A best practice is to configure this mapping at the
 realm level, which allows to share the same settings across multiple clients.
 
 The `Default ACR Values` can be used to specify the default values when the login request is sent from this client to {project_name} without `acr_values` parameter and without
@@ -125,4 +125,4 @@ really requires level 2, the client is encouraged to check the presence of the `
 
 image:client-oidc-map-acr-to-loa.png[alt="ACR to LoA mapping"]
 
-For further details see  <<_step-up-flow,Step-up Authentication>> and  https://openid.net/specs/openid-connect-core-1_0.html#acrSemantics[the offical OIDC specification].
+For further details see xref:authentication/flows.adoc#_step-up-flow[Step-up Authentication] and  https://openid.net/specs/openid-connect-core-1_0.html#acrSemantics[the offical OIDC specification].

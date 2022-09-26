@@ -4,7 +4,7 @@ You configure realms and perform most administrative tasks in the {project_name}
 
 .Prerequisites
 
-* You need an administrator account.  See xref:creating-first-admin[Creating the first administrator].
+* You need an administrator account.  See xref:assembly-creating-first-admin.adoc[Creating the first administrator].
 
 .Procedure
 

@@ -1,5 +1,4 @@
 
-[id="assembly-managing-clients"]
 = Managing OpenID Connect and SAML Clients
 
 [role="_abstract"]

@@ -127,6 +127,14 @@ Suggestion:
 
 * The pages should not contain a modular writing prefix like `assembly_`.
 
+Concept:
+
+* The first lines below a title (lines starting with a single `=`) are attributes to the title, not text.
+
+Requirement:
+
+* Create a blank line after each title and before everyhting else (like, for example, a `[role="_abstract"]`)
+
 == Todos for a real site
 
 * Consider Algolia for a hosted search service instead of client-side JavaScript search, as the index would overwise grow too big.

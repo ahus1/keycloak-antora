@@ -27,4 +27,4 @@ image:user-details.png[]
 In both instances, the *User Account Management* page of the impersonated user is displayed.
 
 .Additional resources
-* For more information on assigning administration permissions, see the <<_admin_permissions,Admin Console Access Control>> chapter.
+* For more information on assigning administration permissions, see the xref:admin-console-permissions-all.adoc[Admin Console Access Control] chapter.

@@ -1,8 +1,8 @@
 
 [[_timeouts]]
 = Session and token timeouts
-[role="_abstract"]
 
+[role="_abstract"]
 ifeval::[{project_product}==true]
 {project_name} includes control of the session, cookie, and token timeouts through the *Tokens* tab in the *Realm Settings* menu.
 endif::[]

@@ -1,7 +1,7 @@
 [id="con-basic-settings"]
 = Basic configuration
-[role="_abstract"]
 
+[role="_abstract"]
 The *Settings* tab includes many options to configure this client.
 
 .Settings tab
@@ -26,7 +26,7 @@ the name, set up a replacement string value. For example, a string value such as
 
 *Valid Redirect URIs*:: Required field.  Enter a URL pattern and click *+* to add and *-* to remove existing URLs and click *Save*. You can use wildcards at the end of the URL pattern. For example \http://host.com/*
 +
-Exclusive redirect URL patterns are typically more secure.  See xref:unspecific-redirect-uris[Unspecific Redirect URIs] for more information.
+Exclusive redirect URL patterns are typically more secure.  See xref:threat/redirect.adoc[Unspecific Redirect URIs] for more information.
 
 Web Origins:: Enter a URL pattern and click + to add and - to remove existing URLs. Click Save.
 +
@@ -54,17 +54,17 @@ For client-side clients that perform browser logins. As it is not possible to en
 
 *Authorization*:: Enables or disables fine-grained authorization support for this client.
 
-*Standard Flow*:: If enabled, this client can use the OIDC xref:_oidc-auth-flows-authorization[Authorization Code Flow].
+*Standard Flow*:: If enabled, this client can use the OIDC xref:sso-protocols.adoc#_oidc-auth-flows-authorization[Authorization Code Flow].
 
-*Direct Access Grants*:: If enabled, this client can use the OIDC xref:_oidc-auth-flows-direct[Direct Access Grants].
+*Direct Access Grants*:: If enabled, this client can use the OIDC xref:sso-protocols.adoc#_oidc-auth-flows-direct[Direct Access Grants].
 
-*Implicit Flow*:: If enabled, this client can use the OIDC xref:_oidc-auth-flows-implicit[Implicit Flow].
+*Implicit Flow*:: If enabled, this client can use the OIDC xref:sso-protocols.adoc#_oidc-auth-flows-implicit[Implicit Flow].
 
 *Service account roles*:: If enabled, this client can authenticate to {project_name} and retrieve access token dedicated to this client. In terms of OAuth2 specification, this enables support of `Client Credentials Grant` for this client.
 
-*Auth 2.0 Device Authorization Grant*:: If enabled, this client can use the OIDC xref:con-oidc-auth-flows_server_administration_guide[Device Authorization Grant].
+*Auth 2.0 Device Authorization Grant*:: If enabled, this client can use the OIDC xref:sso-protocols.adoc#con-oidc-auth-flows[Device Authorization Grant].
 
-*OIDC CIBA Grant*:: If enabled, this client can use the OIDC xref:con-oidc-auth-flows[Client Initiated Backchannel Authentication Grant].
+*OIDC CIBA Grant*:: If enabled, this client can use the OIDC xref:sso-protocols.adoc#con-oidc-auth-flows[Client Initiated Backchannel Authentication Grant].
 
 == Login settings
 

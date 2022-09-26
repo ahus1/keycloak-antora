@@ -1,8 +1,9 @@
 
 [[_client-saml-configuration]]
 = Creating a SAML client
+
 [role="_abstract"]
-{project_name} supports <<_saml,SAML 2.0>> for registered applications.
+{project_name} supports xref:sso-protocols.adoc#_saml[SAML 2.0] for registered applications.
 POST and Redirect bindings are supported. You can choose to require client signature validation. You can have the server sign and/or encrypt responses as well.
 
 .Procedure

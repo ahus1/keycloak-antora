@@ -1,6 +1,3 @@
-
-[[_transient-session]]
-
 = Transient sessions
 
 You can conduct transient sessions in {project_name}. When using transient sessions, {project_name} does not create a user session after successful authentication. {project_name} creates a temporary, transient session for the scope of the current request that successfully authenticates the user. {project_name} can run xref:assembly-managing-clients.adoc#_protocol-mappers[protocol mappers] using transient sessions after authentication.

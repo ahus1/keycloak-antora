@@ -1,6 +1,7 @@
 [id="proc-creating-realm-roles"]
 
 = Creating a realm role
+
 [role="_abstract"]
 ifeval::[{project_community}==true]
 Realm-level roles are a namespace for defining your roles. To see the list of roles, click *Realm Roles* in the menu.

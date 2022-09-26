@@ -15,4 +15,4 @@ for the successful completion of their current task.
 
 .Additional resources
 
-* See <<_per_realm_admin_permissions, Dedicated Realm Admin Consoles>> if you want to disable the _master_ realm and define administrator accounts within any new realm you create. Each realm has its own dedicated Admin Console that you can log into with local accounts.
+* See xref:admin-console-permissions/per-realm.adoc[Dedicated Realm Admin Consoles] if you want to disable the _master_ realm and define administrator accounts within any new realm you create. Each realm has its own dedicated Admin Console that you can log into with local accounts.

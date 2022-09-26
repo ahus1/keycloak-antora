@@ -1,5 +1,6 @@
 [[audience-support]]
 = Audience support
+
 [role="_abstract"]
 Typically, the environment where {project_name} is deployed consists of a set of _confidential_ or _public_ client applications that use {project_name} for authentication.
 

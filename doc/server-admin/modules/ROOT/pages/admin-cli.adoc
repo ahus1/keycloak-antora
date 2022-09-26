@@ -1520,7 +1520,7 @@ $ kcadm.sh create identity-provider/instances -r demorealm -s alias=google -s pr
 === Configuring a Twitter identity provider
 
 . Use `twitter` as the `providerId`.
-. Provide the `config` attributes `clientId` and `clientSecret`. You can find these attributes in the Twitter Application Management application configuration page for your application. See the xref:identity-broker/social/[Twitter identity broker] page for more information.
+. Provide the `config` attributes `clientId` and `clientSecret`. You can find these attributes in the Twitter Application Management application configuration page for your application. See the xref:identity-broker/social/twitter.adoc[Twitter identity broker] page for more information.
 +
 For example:
 +

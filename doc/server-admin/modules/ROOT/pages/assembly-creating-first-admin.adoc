@@ -1,5 +1,3 @@
-
-[id="creating-first-admin"]
 = Creating the first administrator
 
 After installing {project_name}, you need an administrator account that can act as a _super_ admin with full permissions to manage {project_name}. With this account, you can log in to the {project_name} Admin Console where you create realms and users and register applications that are secured by {project_name}.

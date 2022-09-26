@@ -47,7 +47,7 @@ Enable SSL and Enable StartTSL::
   Toggle one of these switches to *ON* to support sending emails for recovering usernames and passwords, especially if the SMTP server is on an external network. You will most likely need to change the *Port* to 465, the default port for SSL/TLS.
 
 Enable Authentication::
-  Set this switch to *ON* if your SMTP server requires authentication. When prompted, supply the *Username* and *Password*. The value of the *Password* field can refer a value from an external <<_vault-administration,vault>>.
+  Set this switch to *ON* if your SMTP server requires authentication. When prompted, supply the *Username* and *Password*. The value of the *Password* field can refer a value from an external xref:vault.adoc[vault].
 endif::[]
 
 ifeval::[{project_community}==true]
@@ -78,5 +78,5 @@ Encryption::
   Tick one of these checkboxes to support sending emails for recovering usernames and passwords, especially if the SMTP server is on an external network. You will most likely need to change the *Port* to 465, the default port for SSL/TLS.
 
 Authentication::
-  Set this switch to *ON* if your SMTP server requires authentication. When prompted, supply the *Username* and *Password*. The value of the *Password* field can refer a value from an external <<_vault-administration,vault>>.
+  Set this switch to *ON* if your SMTP server requires authentication. When prompted, supply the *Username* and *Password*. The value of the *Password* field can refer a value from an external xref:vault.adoc[vault].
 endif::[]

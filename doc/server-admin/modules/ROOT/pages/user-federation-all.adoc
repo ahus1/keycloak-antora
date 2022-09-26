@@ -1,5 +1,3 @@
-[[_user-storage-federation]]
-
 = Using external storage
 
 [role="_abstract"]

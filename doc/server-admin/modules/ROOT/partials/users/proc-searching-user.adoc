@@ -24,4 +24,4 @@ NOTE: This action searches only the local {project_name} database and not the fe
 ... To apply changes to all users in the database, click *Sync all users* on the page with your federation provider.
 
 .Additional resources
-* For more information on user federation, see <<_user-storage-federation,User Federation>>.
+* For more information on user federation, see xref:user-federation-all.adoc[User Federation].

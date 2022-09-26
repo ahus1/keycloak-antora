@@ -1,8 +1,9 @@
 [id="proc-specifying-default-groups"]
 
 = Using default groups
+
 [role="_abstract"]
-To automatically assign group membership to any users who is created or who is imported through <<_identity_broker, Identity Brokering>>, you use default groups.
+To automatically assign group membership to any users who is created or who is imported through xref:identity-broker-all.adoc[Identity Brokering], you use default groups.
 
 ifeval::[{project_community}==true]
 . Click *Realm settings* in the menu.

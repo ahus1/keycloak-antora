@@ -1,6 +1,3 @@
-
-[[_vault-administration]]
-
 = Using a vault to obtain secrets
 
 To obtain a secret from a vault rather than entering it directly, enter the following specially crafted string into the appropriate field:

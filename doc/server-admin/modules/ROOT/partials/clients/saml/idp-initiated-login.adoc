@@ -1,12 +1,13 @@
 
 = IDP Initiated login
+
 [role="_abstract"]
 IDP Initiated Login is a feature that allows you to set up an endpoint on the {project_name} server that will log you into a specific application/client.
 In the *Settings* tab for your client, you need to specify the *IDP Initiated SSO URL Name*.
 This is a simple string with no whitespace in it.
 After this you can reference your client at the following URL: `root{kc_realms_path}/++{realm}++/protocol/saml/clients/++{url-name}++`
 
-The IDP initiated login implementation prefers _POST_ over _REDIRECT_ binding (check <<_saml, saml bindings>> for more information).
+The IDP initiated login implementation prefers _POST_ over _REDIRECT_ binding (check xref:identity-broker/saml.adoc[saml bindings] for more information).
 Therefore the final binding and SP URL are selected in the following way:
 
 1. If the specific *Assertion Consumer Service POST Binding URL* is defined (inside *Fine Grain SAML Endpoint Configuration* section
@@ -19,7 +20,7 @@ If your client requires a special relay state, you can also configure this on th
 Alternatively, browsers can specify the relay state in a *RelayState* query parameter, i.e.
 `root{kc_realms_path}/++{realm}++/protocol/saml/clients/++{url-name}++?RelayState=thestate`.
 
-When using <<_identity_broker,identity brokering>>, it is possible to set up an IDP Initiated Login for a client from an
+When using xref:identity-broker-all.adoc[identity brokering], it is possible to set up an IDP Initiated Login for a client from an
 external IDP. The actual client is set up for IDP Initiated Login at broker IDP as described above. The external IDP has
 to set up the client for application IDP Initiated Login that will point to a special URL pointing to the broker and
 representing IDP Initiated Login endpoint for a selected client at the brokering IDP. This means that in client settings
@@ -37,5 +38,5 @@ at the external IDP:
        this client, which will be made available for IDP Initiated Login from the external IDP.
 
 Please note that you can import basic client settings from the brokering IDP into client settings of the external IDP -
-just use <<_identity_broker_saml_sp_descriptor,SP Descriptor>> available from the settings of the identity provider in
+just use xref:identity-broker/saml.adoc#_identity_broker_saml_sp_descriptor[SP Descriptor] available from the settings of the identity provider in
 the brokering IDP, and add `clients/_client-id_` to the endpoint URL.
