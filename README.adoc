@@ -39,6 +39,7 @@ Concepts:
 * A link from one component to another component that doesn't specify a component version will link to the latest release of that component.
 +
 To link to the same version of a component, use for example `++xref:{page-version}@guides-server::importExport.adoc[]++`
+* Antora Assembler will create on AsciiDoc file per component; alternatively it can also create on AsciiDoc file per navigation item in a component.
 
 Questions:
 
