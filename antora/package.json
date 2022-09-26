@@ -17,5 +17,8 @@
     "asciidoctor-highlight.js": "^0.4.0",
     "asciidoctor-kroki": "^0.16.0",
     "http-server": "^14.1.1"
+  },
+  "dependencies": {
+    "asciidoctor-pdf": "^1.0.0-alpha.16"
   }
 }
