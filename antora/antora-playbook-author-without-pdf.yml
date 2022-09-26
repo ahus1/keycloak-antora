@@ -33,8 +33,8 @@ ui:
 runtime:
   fetch: true
   cache_dir: ./.cache/antora
-#  log:
-#    failure_level: warn
+  log:
+    failure_level: warn
 
 output:
   clean: true
@@ -59,11 +59,15 @@ asciidoc:
     project_community: true
     project_product: false
     project_images: keycloak-images
+    project_versionLinks: latest
     project_doc_base_url: 'https://www.keycloak.org/docs/{project_versionLinks}'
     project_doc_base_url_latest: https://www.keycloak.org/docs/latest
-    project_versionLinks: latest
     project_dirref: KEYCLOAK_HOME
     project_openshift_product_name: Keycloak for OpenShift
+    project_version: 20.0.0
+    project_versionMvn: 20.0.0
+    project_versionNpm: 20.0.0
+    project_versionDoc: 20.0
     kc_realms_path: /realms
     kc_admins_path: /admin
     kc_js_path: /js
@@ -156,8 +160,4 @@ asciidoc:
     standalone: ''
     api-management: ~
     on-prem: ''
-    project_version: 20.0.0
-    project_versionMvn: 20.0.0
-    project_versionNpm: 20.0.0
-    project_versionDoc: 20.0
 

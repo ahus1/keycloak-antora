@@ -108,9 +108,9 @@ When you access the provider's SAML SP metadata, look for the `Endpoints` item i
 
 This metadata is also available publicly by going to the following URL:
 
-[source,subs=+attributes]
+[source,subs="+attributes,macros"]
 ----
-http[s]://{host:port}{kc_realms_path}/++{realm-name}++/broker/{broker-alias}/endpoint/descriptor
+http[s]://{host:port}{kc_realms_path}/++{realm-name}++/broker/++{broker-alias}++/endpoint/descriptor
 ----
 
 Ensure you save any configuration changes before accessing the descriptor.
@@ -120,9 +120,9 @@ Ensure you save any configuration changes before accessing the descriptor.
 
 By default, a social button pointing to a SAML Identity Provider redirects the user to the following login URL:
 
-[source,subs=+attributes]
+[source,subs="+attributes,macros"]
 ----
-http[s]://{host:port}{kc_realms_path}/$++{realm-name}++/broker/{broker-alias}/login
+http[s]://{host:port}{kc_realms_path}/$++{realm-name}++/broker/++{broker-alias}++/login
 ----
 
 Adding a query parameter named `login_hint` to this URL adds the parameter's value to SAML request as a Subject attribute. If this query parameter is empty, {project_name} does not add a subject to the request.

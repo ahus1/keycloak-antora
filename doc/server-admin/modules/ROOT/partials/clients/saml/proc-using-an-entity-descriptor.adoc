@@ -31,8 +31,8 @@ endif::[]
 
 Some SAML client adapters, such as _mod-auth-mellon_, need the XML Entity Descriptor for the IDP.  You can find this descriptor by going to this URL:
 
-[source, subs="attributes"]
+[source, subs="attributes,macros"]
 ----
-root{kc_realms_path}/{realm}/protocol/saml/descriptor
+root{kc_realms_path}/++{realm}++/protocol/saml/descriptor
 ----
 where _realm_ is the realm of your client.
