@@ -1,10 +1,20 @@
 = Antora Documentation site
+:experimental:
+:icons: font
 
 This project uses Antora for its documentation site.
 
-To build the site locally, `yarn` needs to be installed.
+== Creating the documentation site
 
-Install all NPM dependencies to build the site locally:
+To build the Antora site locally, `npm` needs to be installed.
+
+[NOTE]
+====
+This doesn't create the PDFs and Antora assembler files as this is a lot faster.
+Refer to the next section on how to create the PDFs.
+====
+
+Install all npm dependencies to build the site locally:
 
 [source,bash]
 ----
@@ -15,7 +25,7 @@ Use the author playbook to generate a local HTML site for a preview:
 
 [source,bash]
 ----
-npm run author
+npm run author-without-pdf
 ----
 
 Start a minimal webserver to preview the site locally.
@@ -24,4 +34,30 @@ Once it has been started, go to http://localhost:5000/keycloak-benchmark/ to pre
 [source,bash]
 ----
 npm run serve
+----
+
+== Creating the Antora Assembler files and PDFs
+
+This creates the documentation site locally with PDFs.
+
+[WARNING]
+====
+This takes up to 3 minutes to complete.
+For the HTML-only version, use the description in the previous section.
+====
+
+In addition to `npm` dependency, `ruby` needs to be installed.
+
+To install the dependent packages for `asciidoctor-pdf` outlined in `Gemfile`, run the following command once:
+
+[source,bash]
+----
+bundle install
+----
+
+Then run to create the Antora site with PDFs. This takes up to 3 minutes to complete.
+
+[source,bash]
+----
+npm run author-with-pdf
 ----
