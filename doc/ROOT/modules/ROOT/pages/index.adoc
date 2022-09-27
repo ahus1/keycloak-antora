@@ -3,8 +3,9 @@
 
 This is the documentation site for Keycloak.
 
-* xref:20.0@guides-server::index.adoc[] (link:/keycloak-antora/guides-server/20.0/guides-keycloak-server.pdf[PDF])
-* xref:20.0@guides-operator::index.adoc[] (link:/keycloak-antora/guides-operator/20.0/guides-keycloak-operator.pdf[PDF])
-* xref:20.0@server-admin::index.adoc[] (link:/keycloak-antora/server-admin/20.0/keycloak-server-administration.pdf[PDF])
+* xref:20.0@guides-server::index.adoc[] +
+(link:/keycloak-antora/guides-server/20.0/guides-keycloak-server.pdf[Asciidoctor PDF]) (link:/keycloak-antora/server-admin/html-single/[Single page HTML to browse]) (link:/keycloak-antora/server-admin/server-admin.zip[Single page HTML to download])
+* xref:20.0@guides-operator::index.adoc[] (link:/keycloak-antora/guides-operator/20.0/guides-keycloak-operator.pdf[Asciidoctor PDF])
+* xref:20.0@server-admin::index.adoc[] (link:/keycloak-antora/server-admin/20.0/keycloak-server-administration.pdf[Asciidoctor PDF])
 
 A link:/keycloak-antora/antora-assembler.zip[complete output of Antora Assembler and a PDF is avilable for download].

@@ -4,7 +4,7 @@ on:
   push:
     branches:
       - main
-      - npm
+      - ccutil
     paths:
       - '.github/workflows/docs-pages.yml'
       - 'antora/**'
@@ -33,10 +33,14 @@ jobs:
           working-directory: antora
       - name: Build docs
         working-directory: antora
+        # language=shell
         run: |
           ./build.sh
-          zip -r antora-assembler.zip build
+          ./ccutil.sh
+          zip -qr antora-assembler.zip build
           mv antora-assembler.zip _site/keycloak-antora
+          zip -qr server-admin.zip server-admin/build
+          mv server-admin.zip _site/keycloak-antora/server-admin
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
