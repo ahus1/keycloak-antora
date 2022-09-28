@@ -14,7 +14,7 @@ In this guide, you'll learn how to configure your Keycloak deployment using adva
 === Server Configuration details
 
 The `serverConfiguration` field of the Keycloak CR allows to pass to Keycloak any available configuration in the form of key-value pairs.
-For all the available configuration options, refer to xref:{page-version}@guides-server::all-config.adoc[].
+For all the available configuration options, refer to xref:{page-version}@guides-server::all-config.adoc[All Configuration].
 
 The values can be expressed as plain text strings or Kubernetes Secret references.
 e.g:

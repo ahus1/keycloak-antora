@@ -61,7 +61,6 @@ The following process is completed for each Antora component (new process) or gu
 
 |===
 
-
 == Concepts and Questions
 
 Concepts:
@@ -166,6 +165,15 @@ Concept:
 Requirement:
 
 * Create a blank line after each title and before everyhting else (like, for example, a `[role="_abstract"]`)
+
+Concept:
+
+* All `xref:{page-version}@guides-server::..` refernces work in Antora.
+But as they can't be converted by Antora assembler as they are outside references, those need to be replaced with regular link (possibly via sed, see GitHub action).
+
+Suggestion:
+
+* To have a proper text replacements, provide the full link text in the brackets.
 
 == Todos for a real site
 

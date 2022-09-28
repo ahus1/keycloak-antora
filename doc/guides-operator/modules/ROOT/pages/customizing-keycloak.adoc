@@ -24,7 +24,7 @@ This can be avoided by providing a Custom Image where the augmentation already h
 
 A custom image additionally allows to specify Keycloak's "build-time" configurations and extensions during the build of the container.
 
-For instructions on how to build such image refer to xref:{page-version}@guides-server::containers.adoc[].
+For instructions on how to build such image refer to xref:{page-version}@guides-server::containers.adoc[Running Keycloak in containers].
 
 === Providing Custom Keycloak image
 

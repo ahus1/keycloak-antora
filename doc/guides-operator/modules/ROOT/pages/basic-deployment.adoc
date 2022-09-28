@@ -21,7 +21,7 @@ We assume that the Operator is correctly installed and running in the cluster na
 ==== Database
 
 A database should be available and accessible from the cluster namespace where you want to install Keycloak.
-Please refer to xref:{page-version}@guides-server::db.adoc[]
+Please refer to xref:{page-version}@guides-server::db.adoc[Configuring the database]
  for the list of supported databases.
 The Keycloak Operator does not manage the database and you need to provision it yourself, we suggest to verify your cloud provider offering or use a database Operator such as https://access.crunchydata.com/documentation/postgres-operator/latest/[Crunchy].
 
@@ -76,7 +76,7 @@ kubectl apply -f example-postgres.yaml
 ==== Hostname
 
 To have a production ready installation you need to provide the hostname that will be used to contact Keycloak.
-Please refer to xref:{page-version}@guides-server::hostname.adoc[]
+Please refer to xref:{page-version}@guides-server::hostname.adoc[Configuring the hostname]
  for the available configurations.
 
 For development purposes we will use from now on `test.keycloak.org`.

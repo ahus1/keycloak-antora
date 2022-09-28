@@ -238,7 +238,7 @@ image:user-profile-validation.png[]
 In order to pass additional information to frontends, attributes can be decorated with
 annotations to dictate how attributes are rendered. This capability is mainly useful when extending {project_name} themes
 to render pages dynamically based on the annotations associated with attributes.
-This mechanism is used for example to link:#_configurin_form_input_field_for_attribute[configure Form input filed for attribute].
+This mechanism is used for example to xref:_configurin_form_input_field_for_attribute[configure Form input filed for attribute].
 
 .Attribute Annotation
 image:user-profile-annotation.png[]
@@ -502,13 +502,13 @@ Text is NOT html escaped when rendered into the page, so you can use html tags h
 Text is NOT html escaped when rendered into the page, so you can use html tags here to format the text, but you also have to correctly escape html control characters.
 
 |inputOptionsFromValidation
-|Annotation for select and multiselect types. Optional name of custom attribute validation to get input options from. See link:#_managing_options_for_select_fields[detailed description] below.
+|Annotation for select and multiselect types. Optional name of custom attribute validation to get input options from. See xref:_managing_options_for_select_fields[detailed description] below.
 
 |inputOptionLabelsI18nPrefix
-|Annotation for select and multiselect types. Internationalization key prefix to render options in UI. See link:#_managing_options_for_select_fields[detailed description] below.
+|Annotation for select and multiselect types. Internationalization key prefix to render options in UI. See xref:_managing_options_for_select_fields[detailed description] below.
 
 |inputOptionLabels
-|Annotation for select and multiselect types. Optional map to define UI labels for options (directly or using internationalization). See link:#_managing_options_for_select_fields[detailed description] below.
+|Annotation for select and multiselect types. Optional map to define UI labels for options (directly or using internationalization). See xref:_managing_options_for_select_fields[detailed description] below.
 
 |inputTypePlaceholder
 |HTML input `placeholder` attribute applied to the field - specifies a short hint that describes the expected value of an input field (e.g. a sample value
@@ -573,19 +573,19 @@ Available `inputType` annotation values:
 |textarea
 
 |select
-|Common single select input. See link:#_managing_options_for_select_fields[description how to configure options] below.
+|Common single select input. See xref:_managing_options_for_select_fields[description how to configure options] below.
 |select
 
 |select-radiobuttons
-|Single select input through group of radio buttons. See link:#_managing_options_for_select_fields[description how to configure options] below.
+|Single select input through group of radio buttons. See xref:_managing_options_for_select_fields[description how to configure options] below.
 |group of input
 
 |multiselect
-|Common multiselect input. See link:#_managing_options_for_select_fields[description how to configure options] below.
+|Common multiselect input. See xref:_managing_options_for_select_fields[description how to configure options] below.
 |select
 
 |multiselect-checkboxes
-|Multiselect input through group of checkboxes. See link:#_managing_options_for_select_fields[description how to configure options] below.
+|Multiselect input through group of checkboxes. See xref:_managing_options_for_select_fields[description how to configure options] below.
 |group of input
 
 |html5-email
