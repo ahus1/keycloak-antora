@@ -7,11 +7,9 @@
 [[advanced-configuration]]
 = Advanced configuration
 
-
-== Advanced Configuration
 In this guide, you'll learn how to configure your Keycloak deployment using advanced concepts and options provided by Custom Resources (CR).
 
-=== Server Configuration details
+== Server Configuration details
 
 The `serverConfiguration` field of the Keycloak CR allows to pass to Keycloak any available configuration in the form of key-value pairs.
 For all the available configuration options, refer to xref:{page-version}@guides-server::all-config.adoc[All Configuration].
@@ -42,7 +40,7 @@ spec:
         key: password # name of the Key in the Secret
 ----
 
-=== Secret References
+== Secret References
 
 A Secret Reference can be either a value in `serverConfiguration` or the `tlsSecret`.
 
@@ -51,11 +49,11 @@ Along with the Keycloak Server Deployment, the operator adds special labels to t
 
 When a referenced Secret is modified, the operator automatically performs a rolling restart of the Keycloak Deployment to pick up the changes.
 
-=== Unsupported features
+== Unsupported features
 
 The `unsupported` field of the CR contains highly experimental configuration options that are not completely tested and supported.
 
-==== Pod Template
+=== Pod Template
 
 Pod Template is a raw API representation that is used for the Kubernetes Deployment Template.
 This field is intended to be used as a temporary workaround if there is no officially supported field at the top level of the CR to cover your use-case.
@@ -90,7 +88,7 @@ spec:
               secretName: keycloak-additional-secret
 ----
 
-=== Disabling required CR fields
+== Disabling required CR fields
 
 By default, the Keycloak operator is designed to provide you with the best production-ready Deployment of Keycloak with security in mind.
 Although, for development purposes, you can still disable key security features.

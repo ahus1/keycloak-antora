@@ -7,18 +7,16 @@
 [[basic-deployment]]
 = Basic Keycloak Deployment
 
-
-== Basic Keycloak Deployment
 In this guide we will show how to have a basic Keycloak Deployment on Kubernetes or OpenShift using the Operator.
 We assume that the Operator is correctly installed and running in the cluster namespace.
 
-=== Pre-requisites
+== Pre-requisites
 
 * Database
 * Hostname
 * TLS Certificate and associated keys
 
-==== Database
+=== Database
 
 A database should be available and accessible from the cluster namespace where you want to install Keycloak.
 Please refer to xref:{page-version}@guides-server::db.adoc[Configuring the database]
@@ -73,7 +71,7 @@ EOF
 kubectl apply -f example-postgres.yaml
 ----
 
-==== Hostname
+=== Hostname
 
 To have a production ready installation you need to provide the hostname that will be used to contact Keycloak.
 Please refer to xref:{page-version}@guides-server::hostname.adoc[Configuring the hostname]
@@ -81,7 +79,7 @@ Please refer to xref:{page-version}@guides-server::hostname.adoc[Configuring the
 
 For development purposes we will use from now on `test.keycloak.org`.
 
-==== TLS Certificate and key
+=== TLS Certificate and key
 
 Please refer to Certification Authority of choice to obtain the certificate and the key.
 
@@ -99,7 +97,7 @@ and you should install it in the cluster namespace as a Secret by running:
 kubectl create secret tls example-tls-secret --cert certificate.pem --key key.pem
 ----
 
-=== Deploying Keycloak
+== Deploying Keycloak
 
 To deploy Keycloak you have to create a Custom Resource (CR from now on) shaped after the Keycloak Custom Resource Definition (CRD).
 
@@ -163,7 +161,7 @@ CONDITION: RollingUpdate
   MESSAGE:
 ----
 
-=== Accessing the Keycloak Deployment
+== Accessing the Keycloak Deployment
 
 The Keycloak deployment is, by default, exposed through a basic nginx ingress and it will be accessible through the provided hostname.
 If the default ingress doesn't fit your use-case you can disable it by setting `disableDefaultIngress: true`:
@@ -190,7 +188,7 @@ For debugging and development purposes we suggest you to directly connect to the
 kubectl port-forward service/example-kc-service 8443:8443
 ----
 
-==== Accessing the Admin Console
+=== Accessing the Admin Console
 
 When deploying Keycloak, the operator generates an arbitrary initial admin `username` and `password` and stores those credentials as a Kubernetes basic-auth Secret in the same namespace as the CR.
 

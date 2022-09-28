@@ -7,9 +7,6 @@
 [[realm-import]]
 = Keycloak Realm Import
 
-
-== Keycloak Realm Import
-
 The Keycloak Operator ships with the ability to automatically perform a realm import for the Keycloak Deployment.
 
 .Note:
@@ -21,7 +18,7 @@ If a Realm with the same name already exists in Keycloak it will not be overwrit
 The Realm Import CR only supports creation of new realms and doesn't update or delete those. +
 Changes to the realm performed directly on Keycloak are not synced back in the CR.
 
-=== Writing Realm Import CR
+== Writing Realm Import CR
 
 A Realm Import Custom Resource (CR) looks like follows:
 
@@ -47,7 +44,7 @@ The recommended way to obtain a `RealmRepresentation` is leveraging the export f
 * convert the json to yaml
 * copy-paste the obtained yaml as body for the `realm` key (make sure the indentation is correct)
 
-=== Applying the Realm Import CR
+== Applying the Realm Import CR
 
 Use `kubectl` to create the CR in the correct cluster namespace:
 
