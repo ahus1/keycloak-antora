@@ -54,7 +54,7 @@ To see what has changed, compare the files in the two folders `doc` and `docs-or
 
 |Downstream processing
 |ccutil/Pantheon creating HTML and PDF.
-(https://ahus1.github.io/keycloak-antora/server-admin/server-admin.zip[input from previous step and generated content])
+(https://ahus1.github.io/keycloak-antora/server-admin/server-admin.zip[ZIP file with input from previous step and generated content])
 (https://ahus1.github.io/keycloak-antora/server-admin/html-single/[website output ccutil])
 |ccutil/Pantheon creating HTML and PDF.
 
