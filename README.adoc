@@ -30,8 +30,9 @@ The update of internal references is complete for all guides.
 
 To see what has changed, compare the files in the two folders `doc` and `docs-original`.
 
-== Process old vs. new
+== Process old vs. new Process
 
+The following process is completed for each Antora component (new process) or guide (old process).
 
 |===
 |Task |New process |Old Process
