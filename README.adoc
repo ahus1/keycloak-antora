@@ -30,6 +30,37 @@ The update of internal references is complete for all guides.
 
 To see what has changed, compare the files in the two folders `doc` and `docs-original`.
 
+== Process old vs. new
+
+
+|===
+|Task |New process |Old Process
+
+|Writing content
+|AsciiDoc using Antora component structure.
+(https://github.com/ahus1/keycloak-antora/tree/main/doc/server-admin[link to git])
+|File structure inspired by modular writing.
+(https://github.com/keycloak/keycloak-documentation/tree/main/server_admin[link to git])
+
+|Publishing upstream
+|Antora creating multi-page HTML site.
+(https://ahus1.github.io/keycloak-antora/server-admin/latest/[link to web site])
+|Maven with AsciidoctorJ, creating a single HTML file.
+(https://www.keycloak.org/docs/latest/server_admin/index.html[link to web site])
+
+|Content for downstream
+|Create a single AsciiDoc file using Antora Assembler and adding `master.adoc` and `master-docinfo.xml`.
+|Use content as is with a `master.adoc` and `master-docinfo.xml` file.
+
+|Downstream processing
+|ccutil/Pantheon creating HTML and PDF.
+(https://ahus1.github.io/keycloak-antora/server-admin/server-admin.zip[input from previous step and generated content])
+(https://ahus1.github.io/keycloak-antora/server-admin/html-single/[website output ccutil])
+|ccutil/Pantheon creating HTML and PDF.
+
+|===
+
+
 == Concepts and Questions
 
 Concepts:

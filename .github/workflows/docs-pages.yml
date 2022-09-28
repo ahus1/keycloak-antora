@@ -39,7 +39,7 @@ jobs:
           ./ccutil.sh
           zip -qr antora-assembler.zip build
           mv antora-assembler.zip _site/keycloak-antora
-          zip -qr server-admin.zip server-admin/build
+          zip -qr server-admin.zip server-admin
           mv server-admin.zip _site/keycloak-antora/server-admin
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1

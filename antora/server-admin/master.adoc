@@ -3,6 +3,8 @@
 :numbered:
 :linkattrs:
 
+// TODO: generate attributes below from antora-playbook.yml, or even better capture them when Antora Assembler passes tem on the command line.
+
 :project_name: Keycloak
 :project_name_full: Keycloak
 :project_community: true

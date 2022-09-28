@@ -1,6 +1,7 @@
 #!/bin/bash -ex
 rm -rf server-admin/server-admin
 cp -r build/assembler/server-admin server-admin
+rm server-admin/server-admin/20.0/keycloak-server-administration.pdf
 sed -i '2 a\
 Keycloak Project' server-admin/server-admin/20.0/keycloak-server-administration.adoc
 cd server-admin

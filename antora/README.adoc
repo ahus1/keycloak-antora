@@ -6,7 +6,7 @@ This project uses Antora for its documentation site.
 
 == Creating the documentation site
 
-To build the Antora site locally, `npm` needs to be installed.
+To build the Antora site locally, https://nodejs.org/en/download/[Node 16.x] needs to be installed.
 
 [NOTE]
 ====
