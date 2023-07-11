@@ -42,7 +42,7 @@ jobs:
           zip -qr server-admin.zip server-admin
           mv server-admin.zip _site/keycloak-antora/server-admin
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1
+        uses: actions/upload-pages-artifact@v2
         with:
           path: antora/_site/keycloak-antora
 
