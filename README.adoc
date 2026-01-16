@@ -55,8 +55,6 @@ The following process is completed for each Antora component (new process) or gu
 
 |Downstream processing
 |ccutil/Pantheon creating HTML and PDF.
-(https://ahus1.github.io/keycloak-antora/server-admin/server-admin.zip[ZIP file with input from previous step and generated content])
-(https://ahus1.github.io/keycloak-antora/server-admin/html-single/[website output ccutil])
 |ccutil/Pantheon creating HTML and PDF.
 
 |===
