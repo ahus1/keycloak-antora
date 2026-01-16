@@ -21,7 +21,6 @@ urls:
 antora:
   extensions:
     - '@antora/lunr-extension'
-    - '@antora/pdf-extension'
 
 ui:
   bundle:

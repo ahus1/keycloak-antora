@@ -26,11 +26,6 @@ jobs:
           node-version: '16.x'
           cache: 'npm'
           cache-dependency-path: 'antora/package-lock.json'
-      - uses: ruby/setup-ruby@v1
-        with:
-          ruby-version: '3.0'
-          bundler-cache: true
-          working-directory: antora
       - name: Build docs
         working-directory: antora
         # language=shell
