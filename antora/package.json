@@ -13,7 +13,7 @@
   "devDependencies": {
     "@antora/cli": "^3.1.14",
     "@antora/lunr-extension": "^1.0.0-alpha.13",
-    "@antora/pdf-extension": "^1.0.0-beta.15",
+    "@antora/pdf-extension": "^1.0.0-beta.16",
     "@antora/site-generator": "^3.1.13",
     "asciidoctor-highlight.js": "^0.4.0",
     "asciidoctor-kroki": "^0.18.1",
